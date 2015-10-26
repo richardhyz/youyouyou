@@ -26,6 +26,7 @@ http://www.templatemo.com/preview/templatemo_397_concept
     <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo_misc.css">
 
+
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/templatemo_style.css">
 
@@ -43,6 +44,7 @@ http://www.templatemo.com/preview/templatemo_397_concept
 <script src="../html5.js"></script>
 <![endif]-->
 <script src="blocksit.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 <script>
 $(document).ready(function() {
 	//vendor script
@@ -100,8 +102,10 @@ $(document).ready(function() {
 </head>
 
 <body>
-	
-	<?php
+
+
+
+<?php
 	require_once('test/bookmark_fns.php'); 
 	session_start();
 	?>
@@ -196,11 +200,43 @@ $(document).ready(function() {
 				for($i=0; $i< count($idArray); $i++){  ?>
 					<div class="grid">
 						<div class="imgholder">
-							<img src="images/products/<?php echo $idArray[$i] ?>.jpg" /> 
+							<img type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal<?php echo $idArray[$i] ?>" src="images/products/<?php echo $idArray[$i] ?>.jpg" />
 						</div>
-						
-						
-						
+
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal<?php echo $idArray[$i] ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									</div>
+									<div class="modal-body">
+										<div id="container">
+
+
+											<div class="grid">
+												<div class="imgholder">
+													<img src="images/products/<?php echo $idArray[$i] ?>.jpg" />
+												</div>
+											</div> <!-- class='grid' -->
+
+										</div> <!-- id="container" -->
+
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
 						<?php
 						$sql = "SELECT title FROM product WHERE id = '$idArray[$i]'";
 											$r = $conn->query($sql);
@@ -244,10 +280,17 @@ $(document).ready(function() {
 									}	
 						?>
 						<div class="meta">by <?php echo '<a href="http://youyouyou.co/member.php?user='.$owner.'">'.$owner.'</a>'; ?>
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+								Launch demo modal
+							</button>
 						</div>
+
 					</div> <!-- class='grid' -->
+
+
 			<?php } ?>  <!-- for -->
-						
+
 		</div> <!-- id="container" -->
 			
 
@@ -395,6 +438,7 @@ $(document).ready(function() {
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
 	</div> <!-- /.templatemo_footer -->
+
 
 
 
