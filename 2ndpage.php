@@ -25,6 +25,8 @@ http://www.templatemo.com/preview/templatemo_397_concept
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo_misc.css">
+	<link rel="stylesheet" href="css/2ndpage.css">
+
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/templatemo_style.css">
@@ -43,6 +45,7 @@ http://www.templatemo.com/preview/templatemo_397_concept
 <script src="../html5.js"></script>
 <![endif]-->
 <script src="blocksit.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 <script>
 $(document).ready(function() {
 	//vendor script
@@ -100,8 +103,10 @@ $(document).ready(function() {
 </head>
 
 <body>
-	
-	<?php
+
+
+
+<?php
 	require_once('test/bookmark_fns.php'); 
 	session_start();
 	?>
@@ -195,12 +200,98 @@ $(document).ready(function() {
 				<?php		
 				for($i=0; $i< count($idArray); $i++){  ?>
 					<div class="grid">
+
 						<div class="imgholder">
-							<img src="images/products/<?php echo $idArray[$i] ?>.jpg" /> 
+							<a href="#" data-toggle="modal" data-target="#myModal<?php echo $idArray[$i] ?>" >
+								<img src="images/products/<?php echo $idArray[$i] ?>.jpg" width="150" class="img-responsive img-rounded center-block" alt="" />
+							</a>
 						</div>
-						
-						
-						
+
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal<?php echo $idArray[$i] ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h3 class="modal-title" id="myModalLabel">
+
+											<?php
+											$sql = "SELECT title FROM product WHERE id = '$idArray[$i]'";
+											$r = $conn->query($sql);
+
+											if ($r->num_rows > 0) {
+												// output data of each row
+												while($row = $r->fetch_assoc()) {
+													$title = $row["title"] ;
+												}
+											} else {
+												echo "0 results";
+											}
+											?>
+											<?php echo $title ?>
+
+
+
+										</h3>
+									</div>
+									<div class="modal-body">
+										<img src="images/products/<?php echo $idArray[$i] ?>.jpg" class="img-responsive img-rounded center-block" alt=""/>
+										<form>
+											<div class="form-group">
+												<label for="message-text" class="control-label">Message:</label>
+												<textarea class="form-control" id="message-text"></textarea>
+											</div>
+										</form>
+									</div>
+
+									<?php
+									$comments = array();
+									$sql = "SELECT content, email FROM comment WHERE product_id = '$idArray[$i]'";
+									$r = $conn->query($sql);
+
+									if ($r->num_rows > 0) {
+										// output data of each row
+										while($row = $r->fetch_assoc()) {
+											$comments[] = array(
+												'comment' => $row["content"],
+												'email' => $row['email']
+											);
+										}
+									}
+									foreach ($comments as $comment) {
+
+										$current_comment = $comment['comment'];
+										$current_email = $comment['email'];
+
+										$sql = "SELECT username FROM user WHERE email = '$current_email'";
+										$r = $conn->query($sql);
+										$username = null;
+										if ($r->num_rows > 0) {
+											// output data of each row
+											while($row = $r->fetch_assoc()) {
+												$username = $row['username'];
+												break;
+											}
+										}
+										echo $current_comment;
+										echo $username;
+
+									}
+									?>
+
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Comment</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+
+
 						<?php
 						$sql = "SELECT title FROM product WHERE id = '$idArray[$i]'";
 											$r = $conn->query($sql);
@@ -245,9 +336,12 @@ $(document).ready(function() {
 						?>
 						<div class="meta">by <?php echo '<a href="http://youyouyou.co/member.php?user='.$owner.'">'.$owner.'</a>'; ?>
 						</div>
+
 					</div> <!-- class='grid' -->
+
+
 			<?php } ?>  <!-- for -->
-						
+
 		</div> <!-- id="container" -->
 			
 
@@ -395,6 +489,7 @@ $(document).ready(function() {
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
 	</div> <!-- /.templatemo_footer -->
+
 
 
 
