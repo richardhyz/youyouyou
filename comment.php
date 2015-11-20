@@ -25,12 +25,15 @@ http://www.templatemo.com/preview/templatemo_397_concept
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo_misc.css">
+	<link rel="stylesheet" href="css/2ndpage.css">
+
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/templatemo_style.css">
 
 	<!-- Favicons -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+     <link rel="shortcut icon" href="images/logo.png">
+    <!--<link rel="shortcut icon" href="images/ico/favicon.ico">-->
     
     
     
@@ -38,11 +41,16 @@ http://www.templatemo.com/preview/templatemo_397_concept
     
     
     
-    <script src="jquery.min.js"></script>
+    <!-- <script src="jquery.min.js"></script>  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    
+    
 <!--[if lt IE 9]>
 <script src="../html5.js"></script>
 <![endif]-->
 <script src="blocksit.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 <script>
 $(document).ready(function() {
 	//vendor script
@@ -98,126 +106,212 @@ $(document).ready(function() {
 </script>
 
 
+<!-- comment js-->
+<script>
+$(document).ready(function(){
+	var form = $('form');
+	var submit = $('#submit');
 
-<!-- 登陆弹窗 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<style>
-  .modal-header, h4, .close {
-      background-color: #5cb85c;
-      color:white !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-footer {
-      background-color: #f9f9f9;
-  }
-</style>
+	form.on('submit', function(e) {
+		// prevent default action
+		e.preventDefault();
+		// send ajax request
+		$.ajax({
+			url: 'ajax_comment.php',
+			type: 'POST',
+			cache: false,
+			data: form.serialize(), //form serizlize data
+			beforeSend: function(){
+				// change submit button value text and disabled it
+				submit.val('Submitting...').attr('disabled', 'disabled');
+			},
+			success: function(data){
+				// Append with fadeIn see http://stackoverflow.com/a/978731
+				var item = $(data).hide().fadeIn(800);
+				$('.comment-block').append(item);
 
-<!-- 登陆弹窗 -->
+				// reset form and button
+				form.trigger('reset');
+				submit.val('Submit Comment').removeAttr('disabled');
+			},
+			error: function(e){
+				alert(e);
+			}
+		});
+	});
+});
+</script>
+<!-- Comments js-->
 
 
 
 </head>
 
 <body>
+
+
+
+<?php $product = $_GET["product"] ?>
+<?php
+	include('comment/config.php');
+	include ('comment/function.php');
 	
-	<?php
 	require_once('test/bookmark_fns.php'); 
 	session_start();
+	
+	do_html_header();
 	?>
+
+
 	
-	
-<!-- ....................... -->	
-	<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+		
+		
+		
+		<?php
+			$conn = db_connect();
+			if ($conn->connect_error) {
+				die("Connection failed: " . $conn->connect_error);
+			}
+		?>
+		
+				<div class="wrap" >
+											<!-- ****************************  Modal *************************  -->
+					<div class="above">
+						<div  id="myModal<?php echo $product ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<a href="http://youyouyou.co/2ndpagelike.php" target="_self"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></a>
+										<h3 class="modal-title" id="myModalLabel">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
-        </div>
-        <div class="modal-body">
-          <form  method="post" action="test/member.php">
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
-              <input type="text" class="form-control" name="username" />
-            </div>
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
-              <input class="form-control" type="password" name="passwd" placeholder="Enter password">
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="" checked>Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>          
-          </form> 
-          
-			
-        </div>
-        <div class="modal-footer">
-          <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
-          <p>Not a member? <a href="forgot_form.php">Sign Up</a></p>
-          <p>Forgot <a href="forgot_form.php">Password?</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  <script>
-	$(document).ready(function(){
-		$("#myBtn").click(function(){
-			$("#myModal").modal();
-		});
-	});
-  </script>
-<!-- ....................... -->
+											<?php
+											//$product = "richard1";
+											
+											$sql = "SELECT title FROM product WHERE id = '$product'";
+											$r = $conn->query($sql);
 
+											if ($r->num_rows > 0) {
+												// output data of each row
+												while($row = $r->fetch_assoc()) {
+													$title = $row["title"] ;
+												}
+											} else {
+												echo "0 results";
+											}
+											?>
+											<?php echo $title ?>
 
-	<div class="site-header">
-		<div class="main-navigation">
-			<div class="responsive_menu">
-				<ul>
-					<li><a class="show-1 templatemo_home" href="#">Gallery</a></li>
-					<li><a class="show-2 templatemo_page2" href="#">Products</a></li>
-					<li><a class="show-3 templatemo_page3" href="#">Services</a></li>
-					<li><a class="show-4 templatemo_page4" href="#">About Us</a></li>
-					<li><a class="show-5 templatemo_page5" href="#">Contact Us</a></li>
-				</ul>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 responsive-menu">
-						<a href="#" class="menu-toggle-btn">
-				            <i class="fa fa-bars"></i>
-				        </a>
-					</div> <!-- /.col-md-12 -->
-					<div class="col-md-12 main_menu">
-						<ul>
-							<li><a href="http://youyouyou.co/index.php" >陈列室</a></li>`
-							<li><a href="http://youyouyou.co/2ndpage.php" >软木板</a></li>
-							<li><a href="http://youyouyou.co/3rdpage.php" >我想有</a></li>
-							<li><a href="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>
-							<li><a class="show-5 templatemo_page5" href="#">联系</a></li>
-						<?php
-							if(isset($_SESSION[ 'valid_user'])) { 
-								  ?>
-						
-								<li style="float: right"><a href="http://youyouyou.co/3rdpage.php" target="_self"> <?php echo $_SESSION[ 'valid_user'] ?> </a> <a href="test/logout.php">Logout</a> </li>
-							<?php } 
-							else { ?>
-								<li style="float: right"><button style="background-color:transparent; color:white; border:none; font-size:18px" id="myBtn">登陆/注册</button></li> 
-				
-							<?php } ?>
-							
-							
-						</ul>
-					</div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.main-navigation -->
+										</h3>
+									</div><!--  modal-header  -->
+									
+									<div class="modal-body">
+									
+										<img src="images/products/<?php echo $product ?>.jpg" class="img-responsive img-rounded center-block" alt=""/>
+										
+										
+										<!-- 描述 -->
+										<?php
+										$sql2 = "SELECT description FROM product WHERE id ='$product'";
+											$r2 = $conn->query($sql2);
+
+											if ($r2->num_rows > 0) {
+											// output data of each row
+												while($row2 = $r2->fetch_assoc()) {
+												$description = $row2["description"] ; 
+												}
+											} else {
+												echo "0 results";
+											}
+										?>
+										<p> <?php echo $description ?> </p>
+										<!-- 描述 -->
+										
+										
+										<?php
+											// retrive comments with post id
+											$comment_query = $conn->query(
+												"SELECT *
+												FROM comment
+												WHERE product_id = '$product'
+												");
+										?>
+										
+										<div class="comment-block">	
+																				
+										
+										
+												<div class="comment-title">
+														留言
+												</div>
+												<?php
+										
+												$comments = array();
+												$sql = "SELECT content, username FROM comment WHERE product_id = '$product'";
+												$r = $conn->query($sql);
+
+												if ($r->num_rows > 0) {
+													// output data of each row
+													while($row = $r->fetch_assoc()) {
+														$comments[] = array(
+															'comment' => $row["content"],
+															'username' => $row['username']
+														);
+													}
+												}
+									
+												foreach ($comments as $comment) {
+															$current_comment = $comment['comment'];
+															$username = $comment['username'];
+									
+															?>
+														<div >
+															<p class="comment-user">
+																<span class="userName">  <?php echo $username;?> : </span>
+																<span class="comment-content"> <?php echo $current_comment;?> </span>
+															</p>
+														</div>
+												<?php }
+												?>
+								
+									    </div>  <!--  comment-block -->
+										
+										
+										
+										<form id="form" method="post">
+												<!-- need to supply post id with hidden fild -->
+												<input type="hidden" name="postid" value="<?php echo $product ?>">
+												<label>
+													<input type="hidden" name="name" id="comment-name" value="<?php echo $_SESSION[ 'valid_user'] ?>">
+												</label>
+												<!--<label>
+													<span>Email *</span>
+													<input type="email" name="mail" id="comment-mail" placeholder="Your mail here...." required>
+												</label>-->
+												<label>
+													<span>你的留言 </span> </br>
+													<textarea name="comment" id="comment" cols="100" rows="6" placeholder="Type your comment here...." required></textarea>
+												</label>
+												
+												<div class="modal-footer">
+													<input type="submit" id="submit" value="Submit Comment">
+												</div>
+										</form>
+					
+									
+									</div> <!--  modal-body  -->
+		
+
+								</div> <!--  modal-content  -->
+							</div> <!--  modal-dialog  -->
+						</div> <!--  modal fade  -->
+				<!-- ****************************  Modal *************************  -->
+						</div>
+					</div>
+		
+		
+		
+		
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -237,9 +331,6 @@ $(document).ready(function() {
 <!-- Header --> 
 
 
-
-
-
 <!-- Content -->
 <section id="wrapper">
 		<?php
@@ -251,6 +342,7 @@ $(document).ready(function() {
 			$sql = "SELECT `id` FROM `product`";
 			$result = $conn->query($sql);
 			$idArray = Array();
+
 			if ($result->num_rows > 0) {
 				// output data of each row
 				while($row = $result-> fetch_array()) {
@@ -263,19 +355,24 @@ $(document).ready(function() {
 		?>
 			
 		<div id="container">
+		
 	
 				<?php		
 				for($i=0; $i< count($idArray); $i++){  ?>
 					<div class="grid">
+
 						<div class="imgholder">
-							<img src="images/products/<?php echo $idArray[$i] ?>.jpg" /> 
+							<a href="#" data-toggle="modal" data-target="#myModal<?php echo $idArray[$i] ?>" >
+								<img src="images/products/<?php echo $idArray[$i] ?>.jpg" width="150" class="img-responsive img-rounded center-block" alt="" />
+							</a>
 						</div>
+
 						
-						
-						
+
 						<?php
 						$sql = "SELECT title FROM product WHERE id = '$idArray[$i]'";
 											$r = $conn->query($sql);
+
 											if ($r->num_rows > 0) {
 											// output data of each row
 												while($row = $r->fetch_assoc()) {
@@ -284,8 +381,10 @@ $(document).ready(function() {
 											} else {
 												echo "0 results";
 											}	
+
 											$sql2 = "SELECT description FROM product WHERE id ='$idArray[$i]'";
 											$r2 = $conn->query($sql2);
+
 											if ($r2->num_rows > 0) {
 											// output data of each row
 												while($row2 = $r2->fetch_assoc()) {
@@ -299,35 +398,10 @@ $(document).ready(function() {
 						<p> <?php echo $description ?> </p>
 						
 						
-						<!-- like button-->	
-						<input type="button" value="Like" class="btn btn-like" id="btn-like">
-						<?php 
-						$sql = "SELECT `like` FROM product WHERE id = '$idArray[$i]'";
-						$r = $conn->query($sql);
-						
-						if ($r->num_rows > 0) {
-						// output data of each row
-							while($row = $r->fetch_assoc()) {
-							$like = $row["like"] ; 
-							}
-						} else {
-							echo "0 results";
-						}	 
-						?>
-						
-						<label id="lbl"> <?php echo $like ?> </label>
-        				<!-- like-->
-        				
-        				
-        				<!-- collect button-->
-        				<input type="button" value="Collect" class="btn btn-collect" id="btn-collect">  
-						
-						<!-- collect-->
-		
-						
 						<?php
 						$sql = "SELECT owner FROM product WHERE id = '$idArray[$i]'";
 									$r = $conn->query($sql);
+
 									if ($r->num_rows > 0) {
 									// output data of each row
 										while($row = $r->fetch_assoc()) {
@@ -339,12 +413,26 @@ $(document).ready(function() {
 						?>
 						<div class="meta">by <?php echo '<a href="http://youyouyou.co/member.php?user='.$owner.'">'.$owner.'</a>'; ?>
 						</div>
+
 					</div> <!-- class='grid' -->
+
+
 			<?php } ?>  <!-- for -->
-						
+			
+			
+			
+			
+			
+			 
+			
+			
+			
+			
+			
+
 		</div> <!-- id="container" -->
 			
-		<?php $conn->close(); ?>
+
 
 
 <!--
@@ -470,6 +558,7 @@ $(document).ready(function() {
 		<div class="meta">by Zsolt Zsigmond</div>
 	</div> 
 </div>
+
 -->
 
 
@@ -488,6 +577,7 @@ $(document).ready(function() {
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
 	</div> <!-- /.templatemo_footer -->
+
 
 
 

@@ -104,7 +104,9 @@
 							$query = "UPDATE `user_product` SET `product` = '$newArray' WHERE `username` ='$username'";
 							$query2 = "UPDATE `user_product` SET `index` = '$newIndex' WHERE `username` ='$username'";
 							
-							$query3 = "insert into product values ('".$newProduct."', '', '', '$username')";
+							$query3 = "INSERT INTO `product`(`id`, `title`, `description`, `owner`, `like_count`) VALUES ('".$newProduct."','','','$username','0')";
+							
+							/* $query3 = "insert into product values ('".$newProduct."', '', '', '$username', '0')"; */
 							
 							
 							if (($conn->query($query) === TRUE) && ($conn->query($query2) && ($conn->query($query3) === TRUE)) {

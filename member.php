@@ -30,9 +30,9 @@ http://www.templatemo.com/preview/templatemo_397_concept
 	<link rel="stylesheet" href="css/templatemo_style.css">
 
 	<!-- Favicons -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    
-    
+     <link rel="shortcut icon" href="images/logo.png">
+    <!--<link rel="shortcut icon" href="images/ico/favicon.ico">-->
+      
     
     
     
@@ -103,51 +103,21 @@ $(document).ready(function() {
 
 	<?php $user = $_GET["user"] ?>
 	
-	<?php require_once('test/bookmark_fns.php');   
+	<?php 	
+	/* require('test/bookmark_fns.php'); */
+	include('test/output_fns.php');
+	require_once('test/data_valid_fns.php'); 
+  	require_once('test/db_fns.php');
+    require_once('test/user_auth_fns.php');
+  	require_once('test/url_fns.php');
+  	 
 	session_start();
-	?>
 
-	<div class="site-header">
-		<div class="main-navigation">
-			<div class="responsive_menu">
-				<ul>
-					<li><a class="show-1 templatemo_home" href="#">Gallery</a></li>
-					<li><a class="show-2 templatemo_page2" href="#">Products</a></li>
-					<li><a class="show-3 templatemo_page3" href="#">Services</a></li>
-					<li><a class="show-4 templatemo_page4" href="#">About Us</a></li>
-					<li><a class="show-5 templatemo_page5" href="#">Contact Us</a></li>
-				</ul>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 responsive-menu">
-						<a href="#" class="menu-toggle-btn">
-				            <i class="fa fa-bars"></i>
-				        </a>
-					</div> <!-- /.col-md-12 -->
-					<div class="col-md-12 main_menu">
-						<ul>
-							<li><a href="http://youyouyou.co/index.php" >陈列室</a></li>`
-							<li><a href="http://youyouyou.co/2ndpage.php" >软木板</a></li>
-							<li><a href="http://youyouyou.co/3rdpage.php" >我想有</a></li>
-							<li><a href="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>
-							<li><a class="show-5 templatemo_page5" href="#">联系</a></li>
-						<?php
-							if(isset($_SESSION[ 'valid_user'])) { 
-								  ?>
-						
-								<li style="float: right"><a href="http://youyouyou.co/3rdpage.php" target="_self"> <?php echo $_SESSION[ 'valid_user'] ?> </a> <a href="test/logout.php">Logout</a></li>
-							<?php } 
-							else { ?>
-								<li style="float: right"><a href="http://youyouyou.co/test/login.php" target="_self">登陆/注册</a></li>
-							<?php } ?>
-							
-							
-						</ul>
-					</div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.main-navigation -->
+	do_html_header();
+	?> 
+	
+	
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -157,7 +127,7 @@ $(document).ready(function() {
 				</div> <!-- /.col-md-12 -->
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->
-	</div> <!-- /.site-header -->
+	</div> <!-- /.site-header --> 
  
  	<?php
 		if(isset($_SESSION[ 'valid_user'])) { 
@@ -248,10 +218,10 @@ $(document).ready(function() {
 								
 													
 									<!--  显示出来 -->
-									<img src="images/products/<?php echo $id ?>.jpg" alt=" product<?php echo $i ?>">
+									<a href="http://youyouyou.co/comment.php?product=<?php echo $id ?>" target="_self"> <img src="images/products/<?php echo $id ?>.jpg" alt=" product<?php echo $i ?>"> </a>
 							  
 
-									<a href="#" class="product-title"> <?php echo $title ?> </a> 
+									<a href="http://youyouyou.co/comment.php?product=<?php echo $id ?>" target="_self"> <?php echo $title ?> </a> 
 									<p> <?php echo $description ?> </p>
 								
 																

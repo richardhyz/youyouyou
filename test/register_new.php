@@ -40,12 +40,16 @@
     $_SESSION['valid_user'] = $username;
 
     // provide link to members page
-    do_html_header('Registration successful');
+    // do_html_header('Registration successful');
     echo 'Your registration was successful.  Go to the members page to start setting up your bookmarks!';
-    do_html_url('member.php', 'Go to members page');
+    // do_html_url('member.php', 'Go to members page');
+    
+    echo "<script type=\"text/javascript\">\n";
+	echo "window.location.replace('../3rdpage.php')";
+	echo "</script>\n";
 
    // end page
-   do_html_footer();
+   // do_html_footer();
   }
   catch (Exception $e) {
      do_html_header('Problem:');

@@ -1,17 +1,30 @@
+<!DOCTYPE HTML>
+<!--
+	Overflow by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>首页</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="overflow/assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		
+		
+		
+		<!-- CSS Bootstrap & Custom -->
+   
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/templatemo_misc.css">
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
-<![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
-<![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+		
+			
+    
 	
-	<title>有有有</title>
-    <meta name="keywords" content="" />
-	<meta name="description" content="" />
 <!-- 
 Concept Template 
 http://www.templatemo.com/preview/templatemo_397_concept 
@@ -19,454 +32,369 @@ http://www.templatemo.com/preview/templatemo_397_concept
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
 
-	<!-- CSS Bootstrap & Custom -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo_misc.css">
-
-	<!-- Main CSS -->
-	<link rel="stylesheet" href="css/templatemo_style.css">
 
 	<!-- Favicons -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+	<link rel="shortcut icon" href="images/logo.png">
+    <!--<link rel="shortcut icon" href="images/ico/favicon.ico">-->
+    
+    
+    
+<!-- style for header -->
+<style>
+.site-header .main-navigation ul, .services #icons ul, .about #icons-about ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.templatemo_clear { clear: both; }
+.img_left {	float: left; margin-right: 20px; margin-bottom: 15px; }
+.img_right { float: right; margin-left: 20px; margin-bottom: 15px; }
+
+
+.site-header .main-navigation {
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  padding: 15px 0;
+}
+.site-header .main-navigation ul li {
+  display: inline-block;
+  margin-right: 60px;
+}
+.site-header .main-navigation ul li:last-child {
+  margin-right: 0px !important;
+}
+.site-header .main-navigation ul li a {
+  padding: 10px 20px;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+}
+.site-header .main-navigation ul li a.active {
+  background-color: #eeeeee;
+  color: #2a2a2a;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.site-header .templatemo_logo {
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+  .site-header .main-navigation {
+    padding: 0;
+  }
+  .site-header .main-navigation .container {
+    width: 100%;
+  }
+
+
+
+
+</style>
+    
+    
+
+
 
 </head>
-<body>
 
+<body>
+	
 	<?php
 	session_start();
-	?>
+	/* require('test/bookmark_fns.php'); */
+	include('test/output_fns.php');
+	require_once('test/data_valid_fns.php'); 
+  	require_once('test/db_fns.php');
+    require_once('test/user_auth_fns.php');
+  	require_once('test/url_fns.php'); 
 
+	?>
+ </div>
+
+		<!-- Header -->
 	<div class="site-header">
-		<div class="main-navigation">
-			<div class="responsive_menu">
-				<ul>
-					<li><a class="show-1 templatemo_home" href="#">Gallery</a></li>
-					<li><a href="http://www.baidu.com/" target="_self" >Products</a></li>
-					<li><a class="show-3 templatemo_page3" href="#">Services</a></li>
-					<li><a class="show-4 templatemo_page4" href="#">About Us</a></li>
-					<li><a class="show-5 templatemo_page5" href="#">Contact Us</a></li>
-				</ul>
-			</div>
+	  <div class="main-navigation">
+	
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 responsive-menu">
-						<a href="#" class="menu-toggle-btn">
-				            <i class="fa fa-bars"></i>
-				        </a>
-					</div> <!-- /.col-md-12 -->
-					<div class="col-md-12 main_menu">
-						<ul>
-							<li><a class="show-1 templatemo_home" href="#">陈列室</a></li>
-							<li><a href="http://youyouyou.co/2ndpage.php" target="_self">软木板</a></li>
-							<li><a href="http://youyouyou.co/3rdpage.php" target="_self">我想有</a></li>
-							<li><a href="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>
-							<li><a class="show-5 templatemo_page5" href="#">联系</a></li>
-							
-							<?php
+
+					
+					<div class="col-md-12 main_menu" >
+						<ul style="display: inline">
+						
+							<li style="float: left !important "><img src="images/logow.png" ?><a href="http://youyouyou.co" target="_self">首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+							<li ><a href="http://youyouyou.co/1stpage.php" target="_self">陈列室</a></li>
+							<li><a href="http://youyouyou.co/2ndpagelike.php" target="_self">迷你市集</a></li>
+							<li><a href="#" target="_self">论坛</a></li>
+							<!--<li><a href="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>-->
+							<!-- <li><a href="http://youyouyou.co/5thpage.php" target="_self">联系</a></li> -->
+						  	
+                            <?php
 							if(isset($_SESSION[ 'valid_user'])) { 
 								  ?>
 						
-								<li style="float: right"><a href="http://youyouyou.co/3rdpage.php" target="_self"> <?php echo $_SESSION[ 'valid_user'] ?>  </a> <a href="test/logout.php">Logout</a> </li>
+								<li style="float:right;  margin-left: 30px; !important"><a href="http://youyouyou.co/3rdpage.php" target="_self"> <?php echo $_SESSION[ 'valid_user'] ?>的小屋 </a> <a href="test/logout.php">Logout</a> </li>
 							<?php } 
 							else { ?>
-								<li style="float: right"><a href="http://youyouyou.co/test/login.php" target="_self">登陆/注册</a></li>
-							<?php } ?>	
-							
+								<li style="float:right;  margin-left: 30px;"><a href="http://youyouyou.co/test/login.php" target="_self">登陆/注册</a></li>
+							<?php } ?>
+	
 						</ul>
 					</div> <!-- /.col-md-12 -->
 				</div> <!-- /.row -->
 			</div> <!-- /.container -->
-		</div> <!-- /.main-navigation -->
-		
-		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<a href="#" class="templatemo_logo">
-						<h1>有有有</h1>                     
-					</a> <!-- /.logo -->
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</div> <!-- /.site-header -->
-    <p style="text-align:center; font-size:18px; color: #33CCCC"> 
-    		收集整理各国好东西，用数据告诉你不同的生活方式 </p>
-	
-	<div id="menu-container">
+		  </div>
+		</div>
 
-		<div class="content homepage" id="menu-1">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-2 col-sm-6 col-md-offset-1">
-						<div class="gallery-item">
-								<img src="images/gallery/pill.jpg" alt="image 1">
-								<div class="overlay"> 
-									<a href="images/gallery/pill.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-							<div class="content-gallery">
-								<h3>保健品</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/sneakers.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/sneakers.jpg" alt="image 2">
-							</div>
-							<div class="content-gallery">
-								<h3>运动鞋</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/bags.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/bags.jpg" alt="image 3">
-							</div>
-							<div class="content-gallery">
-								<h3> 包 </h3> 
-						  </div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/makeup.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/makeup.jpg" alt="image 4">
-							</div>
-							<div class="content-gallery">
-								<h3>化妆品</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/tech.jpg.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/tech.jpg" alt="image 5">
-							</div>
-							<div class="content-gallery">
-								<h3>数码</h3> 
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6 col-md-offset-2">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item6.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/toy.jpg" alt="image 6">
-							</div>
-							<div class="content-gallery">
-								<h3>玩具</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item7.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item7.jpg" alt="image 7">
-							</div>
-							<div class="content-gallery">
-								<h3>零食</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/mother.png" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/mother.png" alt="image 8">
-							</div>
-							<div class="content-gallery">
-								<h3>母婴</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-
-								<a href="http://youyouyou.co/outdoor.php"> <img src="images/gallery/gallery-item9.jpg" alt="image 9"> </a>
-							</div>
-							<div class="content-gallery">
-								<h3>户外</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6 col-md-offset-3">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item10.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item10.jpg" alt="image 10">
-							</div>
-							<div class="content-gallery">
-								<h3>Download</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item11.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item11.jpg" alt="image 11">
-							</div>
-							<div class="content-gallery">
-								<h3>工作学习</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-					<div class="col-md-2 col-sm-6">
-						<div class="gallery-item">
-							<div class="image">
-								<div class="overlay">
-									<a href="images/gallery/gallery-item12.jpg" data-rel="lightbox" class="fa fa-expand"></a>
-								</div>
-								<img src="images/gallery/gallery-item12.jpg" alt="image 12">
-							</div>
-							<div class="content-gallery">
-								<h3>Template</h3>
-							</div>
-						</div> <!-- /.gallery-item -->
-					</div> <!-- /.col-md-2 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.slide-item -->
-		</div> <!-- /.homepage -->
-
-
-
-
-
-
-	<!-- 	<div class="content products" id="menu-2">
-        
-
-
-</div> -->
-
-
-
-
-
-
-
-
-		<div class="content services" id="menu-3">
 			
-			<div class="container">
-					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/product1.jpg" alt="product 1">
-								<a href="#" class="product-title">Vestibulum ante ipsum primis</a>
-								<p>This is free <a href="#">HTML5 Template</a> by templatemo and you can use it for any website.</p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/product2.jpg" alt="product 2">
-								<a href="#" class="product-title">Nunc pulvinar leo nec</a>
-								<p>Morbi nec mauris quis massa luctus consequat sit amet luctus metus. Etiam sollicitudin leo.</p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-                        
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/product3.jpg" alt="product 3">
-								<a href="#" class="product-title">Curabitur mollis dignissim</a>
-								<p>Cras convallis erat vitae odio. Pellentesque rutrum nisl dui, dignissim accumsan nisl.</p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/product4.jpg" alt="product 4">
-								<a href="#" class="product-title">Morbi venenatis nunc</a>
-								<p>Nulla vel est in sapien dictum vestibulum eu ac enim. Proin pharetra mi eget sem bibendum.</p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-                        
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/product5.jpg" alt="product 5">
-								<a href="#" class="product-title">Phasellus id elementum</a>
-								<p>Etiam sed felis id eros imperdiet tempus. Mauris sit amet metus risus. Vestibulum mi velit.</p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-						<div class="col-md-4 col-sm-6">
-							<div class="product-item">
-								<img src="images/products/product6.jpg" alt="product 6">
-								<a href="#" class="product-title">Donec ullamcorper</a>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, animi quia voluptatem.</p>
-							</div> <!-- /.product-item -->
-						</div> <!-- /.col-md-4 -->
-					</div> <!-- /.row -->
-			</div> <!-- /.slide-item -->
-		</div> <!-- /.products -->
-        
-        
-        
-        
-        
-        
-        
+			
+			
 
-		<div class="content about" id="menu-4">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-9 col-sm-10">
-						<div class="about-us-content">
-							<div class="toggle-content" id="tab4">
-								<h2 class="page-title">Our History</h2>
-                                
-								<p><img src="images/products/product4.jpg" alt="product 4" class="img-responsive img_left"> A social shopping guide website helping Chinese people find interesting and high quality products in the US. As the website, we will integrate enough information(brands sifting, market share, user comments,..) to guide users to have comprehensive understandings about the products. The products on our site will either have big price difference between China and US or very popular in US but rare in China.
-To make the website fun and more useful, we have a sharing board section in our site. As a member, you can post the products that you think is worth to buy or just share your new shoppings. Also, you can view and like other member’s post and write comments under the posts. The communication between all the users will make the products’ information more diverse and reliable. From here, you are not only a products hunter creating your own wish list, but also a shopping pioneer leading the next trend in China.
-</p>
-								<ul>
-									<li>Cras quis nibh vitae ligula venenatis blandit ut eleifend nunc.</li>
-									<li>Morbi imperdiet mauris ut dolor pellentesque egestas.</li>
-									<li>Ut ultrices lorem quis tellus malesuada blandit.</li>
-									<li>Donec pharetra ante in sodales semper.</li>
-                                    <li>Nam vitae bibendum velit, eu fermentum dui.</li>
+		<!-- Banner -->
+			<section id="banner">
+				<header>
+					<h2>欢迎来到 有有有</h2>
+				</header>
+				<p>在这里找到各国最好最经典的商品<br />
+				探索、收藏、分享你的新发现，从当地人那里把最货真价实东西买回来<br />
+				让你的生活 有有有</p>
+				<footer>
+					<a href="#first" class="button style2 scrolly">近期推荐</a>
+				</footer>
+			</section>
+
+		<!-- Feature 1 -->
+			<article id="first" class="container box style1 right">
+				<a href="http://youyouyou.co/hzhao/product_opinel.php" class="image fit"><img src="images/opinel/opinel4.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<a href="http://youyouyou.co/hzhao/product_opinel.php"><h2>Opinel<br />
+						法国经典折刀</h2></a>
+					</header>
+					<p>号称法国国刀，法国人得第十一跟手指。法国人家传户晓的品牌。<br/>
+						法国人家传户晓的品牌。
+					</p>
+				</div>
+			</article>
+
+		<!-- Feature 2 -->
+			<article class="container box style1 left">
+				<a href="http://youyouyou.co/hzhao/product_rice.php" class="image fit"><img src="hzhao/images_product/rice7.jpg" alt="" /></a>
+				<div class="inner">
+					<header>
+						<h2>Earth's Best世界最好 婴幼儿米糊
+						 </h2>
+					</header>
+					<p>
+					纯天然有机认证的最高纯度含铁量的婴儿米粉。 本品采用最新鲜的天然有机糙米及有机米糠提取物，富含多种必要的维生素、蛋白质、膳食纤维及矿物质。
+					</p>
+				</div>
+			</article>
+
+		<!-- Portfolio -->
+			<article class="container box style2">
+				<header>
+					<a href="http://youyouyou.co/1stpage.php"><h2>更多推荐</h2>
+					<p>进入陈列室<br />
+					查看不同分类的更多精彩</p></a>
+				</header>
+				<div class="inner gallery">
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit"><img src="images/outdoor/3.jpg" alt="" title="Ad infinitum" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit"><img src="images/outdoor/4.jpg" alt="" title="Dressed in Clarity" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit"><img src="images/outdoor/5.jpg" alt="" title="Raven" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit"><img src="images/outdoor/6.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
+					</div>
+					<div class="row 0%">
+						<div class="3u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit"><img src="images/outdoor/7.jpg" alt="" title="Cherish" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit"><img src="images/outdoor/8.jpg" alt="" title="Different." /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/07.jpg" class="image fit"><img src="images/outdoor/9.jpg" alt="" title="History was made here" /></a></div>
+						<div class="3u 12u(mobile)"><a href="images/fulls/08.jpg" class="image fit"><img src="images/gallery/bags.jpg" alt="" title="People come and go and walk away" /></a></div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			
+
+		<!-- Generic -->
+		<!--
+			<article class="container box style3">
+				<header>
+					<h2>Generic Box</h2>
+					<p>Just a generic box. Nothing to see here.</p>
+				</header>
+				<section>
+					<header>
+						<h3>Paragraph</h3>
+						<p>This is a subtitle</p>
+					</header>
+					<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+					habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+					leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+					amet risus elit.</p>
+				</section>
+				<section>
+					<header>
+						<h3>Blockquote</h3>
+					</header>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+					tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
+				</section>
+				<section>
+					<header>
+						<h3>Divider</h3>
+					</header>
+					<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
+					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+					posuere cubilia.</p>
+					<hr />
+					<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+					ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+					facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+					tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+					posuere cubilia.</p>
+				</section>
+				<section>
+					<header>
+						<h3>Unordered List</h3>
+					</header>
+					<ul class="default">
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+					</ul>
+				</section>
+				<section>
+					<header>
+						<h3>Ordered List</h3>
+					</header>
+					<ol class="default">
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+						<li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+					</ol>
+				</section>
+				<section>
+					<header>
+						<h3>Table</h3>
+					</header>
+					<div class="table-wrapper">
+						<table class="default">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>45815</td>
+									<td>Something</td>
+									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>24524</td>
+									<td>Nothing</td>
+									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>45815</td>
+									<td>Something</td>
+									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>24524</td>
+									<td>Nothing</td>
+									<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+									<td>19.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="3"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+				<section>
+					<header>
+						<h3>Form</h3>
+					</header>
+					<form method="post" action="#">
+						<div class="row">
+							<div class="6u">
+								<input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
+							</div>
+							<div class="6u">
+								<input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<select name="department" id="department">
+									<option value="">Choose a department</option>
+									<option value="1">Manufacturing</option>
+									<option value="2">Administration</option>
+									<option value="3">Support</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<textarea name="message" id="message" placeholder="Enter your message"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<ul class="actions">
+									<li><input type="submit" value="Submit" /></li>
+									<li><input type="reset" class="style3" value="Clear Form" /></li>
 								</ul>
-							</div> <!-- /.toggle-content -->
-							<div class="toggle-content" id="tab5">
-								<h2 class="page-title">Our Team</h2>
-								<p><img src="images/products/product2.jpg" alt="product 2" class="img-responsive img_right">Duis purus mauris, tincidunt at consectetur non, tristique sodales ligula. Cras congue cursus risus, nec tempus mi porta eget. Cras ante metus, aliquam tincidunt eros sed, dignissim hendrerit est. Phasellus fringilla sit amet dui eu convallis. Mauris tristique, metus eget auctor tempor, elit odio vehicula mi, ac placerat lectus augue eu arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eu porta urna, a commodo leo. <a href="#">Phasellus porttitor</a>, nisl vitae molestie euismod, magna lorem porta ante, eu commodo nisl orci ut nisi. Curabitur imperdiet, arcu vitae tincidunt viverra, velit elit aliquam metus, sed ultrices metus odio sed nunc.</p>
-                                <p>Etiam lectus tortor, lobortis eu mattis nec, eleifend a nunc. Quisque consequat lectus sed imperdiet vulputate. Vivamus tristique non elit eu faucibus. Nam et arcu vestibulum, bibendum risus vitae, gravida libero. Suspendisse sed lacus neque. Nullam arcu elit, luctus ut enim et, eleifend varius dui. Fusce sit amet convallis lacus. Quisque vel ultricies libero. Morbi at tempor nisi.</p>
-							</div> <!-- /.toggle-content -->
-							<div class="toggle-content" id="tab6">
-								<h2 class="page-title">Our Workspace</h2>
-								<p><img src="images/products/product6.jpg" alt="product 6" class="img-responsive img_left">Labore, libero itaque quisquam officiis earum. Eaque, facilis, quibusdam, ab, voluptates quaerat dignissimos totam nam consequuntur labore explicabo temporibus atque aliquid asperiores error impedit repudiandae est nemo omnis sequi quae eius quos repellat doloribus cumque nulla sunt maxime ducimus commodi animi placeat quo debitis earum illum numquam inventore aspernatur necessitatibus voluptatum delectus maiores laboriosam magni ex illo quod corporis hic consectetur odio suscipit fugit qui aperiam. Sequi, quos, nam quam debitis architecto doloribus rerum illum magnam culpa ex eius nobis ducimus aspernatur aliquid laborum deleniti distinctio temporibus quae.</p> 
-                                <p>Quisque consequat lectus sed imperdiet vulputate. <a href="#">Vivamus tristique</a> non elit eu faucibus. Nam et arcu vestibulum, bibendum risus vitae, gravida libero. Suspendisse sed lacus neque. Nullam arcu elit, luctus ut enim et, eleifend varius dui.</p>
-							</div> <!-- /.toggle-content -->
-						</div> <!-- /.inner-content -->
-					</div> <!-- /.col-md-9 -->
-					<div class="col-md-3 col-sm-2">
-						<div id="icons-about">
-							<ul class="tabs">
-								<li>
-									<a href="#tab4" class="icon-item">
-										<i class="fa fa-umbrella"></i>
-										<span>Our History</span>
-									</a> <!-- /.icon-item -->
-								</li>
-								<li>
-									<a href="#tab5" class="icon-item">
-										<i class="fa fa-camera"></i>
-										<span>Our Team</span>
-									</a> <!-- /.icon-item -->
-								</li>
-								<li>
-									<a href="#tab6" class="icon-item">
-										<i class="fa fa-coffee"></i>
-										<span>Our Workspace</span>
-									</a> <!-- /.icon-item -->
-								</li>
-							</ul>
-						</div> <!-- /.icons -->
-					</div> <!-- /.col-md-3 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.services -->
+							</div>
+						</div>
+					</form>
+				</section>
+			</article>
+		-->
 
-		<div class="content contact" id="menu-5">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="widget-content">
-							<div class="page-title">Contact Us</div>
-							<div class="contact-form">
-								<fieldset>
-									<input id="name" type="text" name="name" placeholder="Name" maxlength="40">
-								</fieldset>
-								<fieldset>
-									<input type="email" name="email" id="email" placeholder="Email" maxlength="30">
-								</fieldset>
-								<fieldset>
-									<input type="text" name="subject" id="subject" placeholder="Subject" maxlength="60">
-								</fieldset>
-								<fieldset>
-									<textarea name="comments" id="comments" placeholder="Message"></textarea>
-								</fieldset>
-								<fieldset>
-									<input type="submit" name="send" value="Send Message" id="submit" class="button">
-								</fieldset>
-							</div> <!-- /.contact-form -->
-						</div> <!-- /.inner-content -->
-					</div> <!-- /.col-md-6 -->
-					<div class="col-md-6">
-						<div class="widget-content">
-							<div class="page-title">Our Location</div>
 
-							<div id="templatemo_map"></div>
+		
 
-                            <div class="contact-information">
-                            	<div class="row">
-                            		<div class="col-md-6 col-sm-6">
-                            			<p>120 Digital Studio, Inya Lake, Yangon 10620, Myanmar</p>
-                            		</div> <!-- /.col-md-6 -->
-                            		<div class="col-md-6 col-sm-6 text-right">
-                            			<ul>
-                            				<li>Tel: 010-020-0340</li>
-                            				<li>Email: info@company.com</li>
-                            			</ul>
-                            		</div> <!-- /.col-md-6 -->
-                            	</div> <!-- /.row -->
-                            </div> <!-- /.contact-information -->
-						</div> <!-- /.inner-content -->
-					</div> <!-- /.col-md-6 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.contact -->
 
-	</div> <!-- /#menu-container -->
 
-	<div id="templatemo_footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>Copyright &copy; 2084 Your Company Name</p>
-				</div> <!-- /.col-md-12 -->
-			</div> <!-- /.row -->
-		</div> <!-- /.container -->
-	</div> <!-- /.templatemo_footer -->
-
-	<!-- Scripts -->
-	<script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/modernizr.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<script src="js/tabs.js"></script>
-	<script src="js/jquery.lightbox.js"></script>
-	<script src="js/templatemo_custom.js"></script>
-	<!-- 
-    	Free Responsive Template by templatemo
-    	http://www.templatemo.com
-	-->
-    <!-- templatemo 397 concept -->
-</body>
+		<!-- Scripts -->
+			<script src="overflow/assets/js/jquery.min.js"></script>
+			<script src="overflow/assets/js/jquery.scrolly.min.js"></script>
+			<script src="overflow/assets/js/jquery.poptrox.min.js"></script>
+			<script src="overflow/assets/js/skel.min.js"></script>
+			<script src="overflow/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="overflow/assets/js/main.js"></script>
+	</body>
 </html>

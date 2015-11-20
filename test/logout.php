@@ -1,7 +1,13 @@
 <?php
 
 // include function files for this application
-require_once('bookmark_fns.php');
+// require_once('bookmark_fns.php');
+include('output_fns1.php');
+	require_once('data_valid_fns.php'); 
+  	require_once('db_fns.php');
+    include('user_auth_fns.php');
+  	include('url_fns.php'); 
+  	
 session_start();
 $old_user = $_SESSION['valid_user'];
 
@@ -10,7 +16,35 @@ unset($_SESSION['valid_user']);
 $result_dest = session_destroy();
 
 // start output html
-do_html_header('Logging Out');
+
+
+
+?>
+
+  <html>
+  <head>
+    <title>logout</title>
+    <style>
+     /* body { font-family: Arial, Helvetica, sans-serif; font-size: 13px }
+      li, td { font-family: Arial, Helvetica, sans-serif; font-size: 13px }  */
+      hr { color: #3333cc; width=300; text-align=left}
+      a { color: #000000 }
+    </style>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/templatemo_style.css">
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../images/logo.png">
+    
+  </head>
+  <body>
+  
+<?php 
+do_html_header();
 
 if (!empty($old_user)) {
   if ($result_dest)  {
@@ -32,3 +66,6 @@ if (!empty($old_user)) {
 do_html_footer();
 
 ?>
+
+   </body>
+</html>
