@@ -32,6 +32,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -41,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
+  line-height: 1; 
 }
 
 ol, ul {
@@ -75,6 +76,13 @@ body {
   color: #777777;
   font-size: 14px;
   line-height: 1.75em;
+  
+    
+  background-image: url("../overflow/assets/css/images/overlay.png"), url("../overflow/images/bg-alt.jpg");
+	background-repeat: repeat, repeat;
+	background-size: auto, 100% auto;
+	background-position: top left, top center;
+	background-attachment: scroll, scroll;
 }
 
 a {
@@ -274,6 +282,40 @@ a.menu-toggle-btn {
   font-weight: 400;
   font-size: 18px;
 }
+
+
+
+/*------------------------------------------------------
+	like function
+--------------------------------------------------------*/
+.btn{
+  background: #33CCCC;
+  background-image: -webkit-linear-gradient(top, #33CCCC, #26adad);
+  background-image: -moz-linear-gradient(top, #33CCCC, #26adad);
+  background-image: -ms-linear-gradient(top, #33CCCC, #26adad);
+  background-image: -o-linear-gradient(top, #33CCCC, #26adad);
+  background-image: linear-gradient(to bottom, #33CCCC, #26adad);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 10px;
+  padding: 3px 6px 3px 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #25e6e6;
+  background-image: -webkit-linear-gradient(top, #25e6e6, #33cccc);
+  background-image: -moz-linear-gradient(top, #25e6e6, #33cccc);
+  background-image: -ms-linear-gradient(top, #25e6e6, #33cccc);
+  background-image: -o-linear-gradient(top, #25e6e6, #33cccc);
+  background-image: linear-gradient(to bottom, #25e6e6, #33cccc);
+  text-decoration: none;
+  font-color: #ffffff;
+}
+
 
 /*------------------------------------------------------
 	Services Styles 

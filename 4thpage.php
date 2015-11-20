@@ -38,51 +38,17 @@ http://www.templatemo.com/preview/templatemo_397_concept
 	
 	<?php
 	session_start();
+	/* require('test/bookmark_fns.php'); */
+	include('test/output_fns.php');
+	require_once('test/data_valid_fns.php'); 
+  	require_once('test/db_fns.php');
+    require_once('test/user_auth_fns.php');
+  	require_once('test/url_fns.php');
+
+	do_html_header();
 	?>
 
 
-	<div class="site-header">
-		<div class="main-navigation">
-			<div class="responsive_menu">
-				<ul>
-					<li><a class="show-1 templatemo_home" href="#">Gallery</a></li>
-					<li><a href="http://www.baidu.com/" target="_self" >Products</a></li>
-					<li><a class="show-3 templatemo_page3" href="#">Services</a></li>
-					<li><a class="show-4 templatemo_page4" href="#">About Us</a></li>
-					<li><a class="show-5 templatemo_page5" href="#">Contact Us</a></li>
-				</ul>
-			</div>
-            
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 responsive-menu">
-						<a href="#" class="menu-toggle-btn">
-				            <i class="fa fa-bars"></i>
-				        </a>
-					</div> <!-- /.col-md-12 -->
-					<div class="col-md-12 main_menu">
-						<ul>
-							<li><a href="http://youyouyou.co/index.php" target="_self">陈列室</a></li>
-							<li><a href="http://youyouyou.co/2ndpage.php" target="_self">软木板</a></li>
-							<li><a href="http://youyouyou.co/3rdpage.php" target="_self">我想有</a></li>
-							<li><a chref="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>
-							<li><a class="show-5 templatemo_page5" href="#">联系</a></li>
-							
-							<?php
-							if(isset($_SESSION[ 'valid_user'])) { 
-								  ?>
-						
-								<li style="float: right"><a href="http://youyouyou.co/3rdpage.php" target="_self"> <?php echo $_SESSION[ 'valid_user'] ?>  </a> <a href="test/logout.php">Logout</a> </li>
-							<?php } 
-							else { ?>
-								<li style="float: right"><a href="http://youyouyou.co/test/login.php" target="_self">登陆/注册</a></li>
-							<?php } ?>	
-							
-						</ul>
-					</div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.main-navigation -->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">

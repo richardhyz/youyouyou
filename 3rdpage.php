@@ -8,6 +8,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
     
+
 	<title>我想有</title>
     <meta name="keywords" content="" />
 	<meta name="description" content="" />
@@ -40,12 +41,14 @@ http://www.templatemo.com/preview/templatemo_397_concept
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo_misc.css">
+	<link rel="stylesheet" href="css/2ndpage.css">
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/templatemo_style.css">
 
 	<!-- Favicons -->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/logo.png">
+    <!--<link rel="shortcut icon" href="images/ico/favicon.ico">-->
     
     
     
@@ -117,57 +120,27 @@ $(document).ready(function() {
 <body>
 
 	
-	<?php require_once('test/bookmark_fns.php');   
+	<?php 
 	session_start();
+	
+	/* require('test/bookmark_fns.php'); */
+	include('test/output_fns.php');
+	require_once('test/data_valid_fns.php'); 
+  	require_once('test/db_fns.php');
+    require_once('test/user_auth_fns.php');
+  	require_once('test/url_fns.php');
+  	   
+	
+
+	do_html_header();
 	?>
 
-	<div class="site-header">
-		<div class="main-navigation">
-			<div class="responsive_menu">
-				<ul>
-					<li><a class="show-1 templatemo_home" href="#">Gallery</a></li>
-					<li><a class="show-2 templatemo_page2" href="#">Products</a></li>
-					<li><a class="show-3 templatemo_page3" href="#">Services</a></li>
-					<li><a class="show-4 templatemo_page4" href="#">About Us</a></li>
-					<li><a class="show-5 templatemo_page5" href="#">Contact Us</a></li>
-				</ul>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 responsive-menu">
-						<a href="#" class="menu-toggle-btn">
-				            <i class="fa fa-bars"></i>
-				        </a>
-					</div> <!-- /.col-md-12 -->
-					<div class="col-md-12 main_menu">
-						<ul>
-							<li><a href="http://youyouyou.co/index.php" >陈列室</a></li>`
-							<li><a href="http://youyouyou.co/2ndpage.php" >软木板</a></li>
-							<li><a href="http://youyouyou.co/3rdpage.php" >我想有</a></li>
-							<li><a href="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>
-							<li><a class="show-5 templatemo_page5" href="#">联系</a></li>
-						<?php
-							if(isset($_SESSION[ 'valid_user'])) { 
-								  ?>
-						
-								<li style="float: right"><a href="http://youyouyou.co/3rdpage.php" target="_self"> <?php echo $_SESSION[ 'valid_user'] ?> </a> <a href="test/logout.php">Logout</a></li>
-							<?php } 
-							else { ?>
-								<li style="float: right"><a href="http://youyouyou.co/test/login.php" target="_self">登陆/注册</a></li>
-							<?php } ?>
-							
-							
-						</ul>
-					</div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container -->
-		</div> <!-- /.main-navigation -->
 		<div class="container">
 			<div class="row">
 			 <div class="blog-masonry masonry-true">
 				<div class="col-md-12 text-center">
 					<a href="#" class="templatemo_logo">
-						<h1>有有有</h1>
+						<h1>我想有!</h1>
 					</a> <!-- /.logo -->
 				</div> <!-- /.col-md-12 -->
 			 </div> <!--blog-masonry masonry-true -->
@@ -232,52 +205,113 @@ $(document).ready(function() {
 					
 								for($i=1; $i< $num; $i ++){ ?>
 								
-								<div class="blog-masonry masonry-true">
-									<div class="col-md-4 col-sm-6">
-										<div class="product-item">       
+									<div class="blog-masonry masonry-true">
+										<div class="col-md-4 col-sm-6">
+											<div class="product-item">       
 						
 								
-											<?php		
-										/*－－－描述－－－*/						
-											$point = $array[$i];
-											$id = $username.$point;		
+												<?php		
+											/*－－－描述－－－*/						
+												$point = $array[$i];
+												$id = $username.$point;		
 									
-											$sql = "SELECT title FROM product WHERE id = '$id'";
-											$r = $conn->query($sql);
+												$sql = "SELECT title FROM product WHERE id = '$id'";
+												$r = $conn->query($sql);
 
-											if ($r->num_rows > 0) {
-											// output data of each row
-												while($row = $r->fetch_assoc()) {
-												$title = $row["title"] ; 
-												}
-											} else {
-												echo "0 results";
-											}	
+												if ($r->num_rows > 0) {
+												// output data of each row
+													while($row = $r->fetch_assoc()) {
+													$title = $row["title"] ; 
+													}
+												} else {
+													echo "0 results";
+												}	
 
-											$sql2 = "SELECT description FROM product WHERE id ='$id'";
-											$r2 = $conn->query($sql2);
+												$sql2 = "SELECT description FROM product WHERE id ='$id'";
+												$r2 = $conn->query($sql2);
 
-											if ($r2->num_rows > 0) {
-											// output data of each row
-												while($row2 = $r2->fetch_assoc()) {
-												$description = $row2["description"] ; 
-												}
-											} else {
-												echo "0 results";
-											}	
-												?>	
+												if ($r2->num_rows > 0) {
+												// output data of each row
+													while($row2 = $r2->fetch_assoc()) {
+													$description = $row2["description"] ; 
+													}
+												} else {
+													echo "0 results";
+												}	
+											
+											
+												// retrive comments with post id
+												$comment_query = $conn->query(
+													"SELECT *
+													FROM comment
+													WHERE product_id = '$id'
+													");
+											
+											
+													?>	
 																																	
-										<!--  显示出来 -->
-										<img src="images/products/<?php echo $id ?>.jpg" alt=" product<?php echo $i ?>">
+											<!--  显示出来 -->
+											<img src="images/products/<?php echo $id ?>.jpg" alt=" product<?php echo $i ?>">
 							  
+											
+											<a href="#" class="product-title"> <?php echo $title ?> </a> 
+											<p> <?php echo $description ?> </p>
+											
+											<!-- delete this post -->
+											</br>
+											<form action="delete.php" method="post" enctype="multipart/form-data">
+												<input type="hidden" name="product" value="<?php echo $id ?>">
+												<input type="hidden" name="id" value="<?php echo $point ?>">
+												<input type="submit" class="btn btn-danger" id="submit" value="删除这个商品">	
+											</form>
+											</br>
+									
+										
+											<div class="comment-block">	 	
+													<p style="text-align:center; font-size:20px; color: lightblue"> 评论 </p> 
+													<?php
+										
+													$comments = array();
+													$sql = "SELECT content, username FROM comment WHERE product_id = '$id'";
+													$r = $conn->query($sql);
 
-										<a href="#" class="product-title"> <?php echo $title ?> </a> 
-										<p> <?php echo $description ?> </p>
+													if ($r->num_rows > 0) {
+														// output data of each row
+														while($row = $r->fetch_assoc()) {
+															$comments[] = array(
+																'comment' => $row["content"],
+																'username' => $row['username']
+															);
+														}
+													}
+									
+													foreach ($comments as $comment) {
+																$current_comment = $comment['comment'];
+																$username = $comment['username'];
+									
+														    ?>
+																
+															<div >
+																<p class="comment-user">
+																	<span class="userName">  <?php echo $username;?> : </span>
+																	<span class="comment-content"> <?php echo $current_comment;?> </span>
+																</p>
+															</div> 
+													<?php }
+													?>
+								
+											</div>   <!-- comment-block -->
+											
+											
+											<a href="http://youyouyou.co/comment.php?product=<?php echo $id ?>" target="_self"> <p> 回复 </p> </a>
+							
+											
+											
 																																			   
 										</div> <!-- /.product-item -->
 									</div> <!-- /.col-md-4 -->
 								</div> <!--blog-masonry masonry-true -->    
-								<?php }  ?> <!-- for -->
+						<?php }  ?> <!-- for -->
 
 								
 								
@@ -291,7 +325,9 @@ $(document).ready(function() {
         
                                       
                                       <form action="testUpload.php" method="post" enctype="multipart/form-data">
-											<label for="file">Upload your new product:</label>
+											<p class="product-title"> 上传你想要购买;</br>
+											或者你可以提供代购的商品;</br>
+											或是仅仅分享你的最新购物经历..</p>
 											<input type="file" name="file" id="file"><br>
 											<input type="submit" name="submit" value="Submit">
 									  </form>
@@ -372,7 +408,9 @@ $(document).ready(function() {
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<p>Copyright &copy; 2015 Handsome Four</p>
+					<p style="text-align: right"><a href="http://youyouyou.co/5thpage.php" class="btn_2"> 联系我们 </a></p>
+					<p style="text-align: left">Copyright &copy; 2015 Handsome Four</p> 
+				  
 				</div> <!-- /.col-md-12 -->
 			</div> <!-- /.row -->
 		</div> <!-- /.container -->

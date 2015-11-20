@@ -24,7 +24,7 @@ function do_html_header() {
 					</div> <!-- /.col-md-12 -->
 					<div class="col-md-12 main_menu">
 						<ul style="display: inline">
-							<li style="float: left"><img src="images/logow.png" ?>
+							<li style="float: left"><img src="../images/logow.png" ?>
 							<a href="http://youyouyou.co" target="_self">首页</a></li>
 							<!-- <li style="float: left"><a href="http://youyouyou.co" target="_self">首页</a></li> -->
 							<li><a href="http://youyouyou.co/1stpage.php" target="_self">陈列室</a></li>
