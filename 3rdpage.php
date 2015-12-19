@@ -205,7 +205,7 @@ $(document).ready(function() {
 					
 								for($i=1; $i< $num; $i ++){ ?>
 								
-									<div class="blog-masonry masonry-true">
+									<!-- <div class="blog-masonry masonry-true"> -->
 										<div class="col-md-4 col-sm-6">
 											<div class="product-item">       
 						
@@ -310,7 +310,7 @@ $(document).ready(function() {
 																																			   
 										</div> <!-- /.product-item -->
 									</div> <!-- /.col-md-4 -->
-								</div> <!--blog-masonry masonry-true -->    
+								<!-- </div> blog-masonry masonry-true -->    
 						<?php }  ?> <!-- for -->
 
 								
@@ -318,7 +318,7 @@ $(document).ready(function() {
 								
 								<!-- 让用户上传图片 -->
 								 <div class="col-md-4 col-sm-6">
-                                    <div class="product-item"
+                                    <div class="product-item">
 
 
                                       <div class="upload">

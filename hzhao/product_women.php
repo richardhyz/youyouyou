@@ -38,6 +38,7 @@ http://www.templatemo.com/preview/templatemo_397_concept
     
     
     
+    
     <script src="jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="../html5.js"></script>
@@ -221,11 +222,12 @@ p {
 }
 </style>
 
+
 </head>
 
 <body>
 	
-<div id="itemid" style="display:none">opinel</div>
+<div id="itemid" style="display:none">women</div>
 
 	<?php
 	
@@ -266,8 +268,8 @@ p {
 						<ul id="etalage">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image" src="../images/opinel/opinel4.jpg" class="img-responsive" />
-									<img class="etalage_source_image" src="../images/opinel/opinel4.jpg" class="img-responsive" title="" />
+									<img class="etalage_thumb_image" src="../product_us/women.jpg" class="img-responsive" />
+									<img class="etalage_source_image" src="../product_us/women.jpg" class="img-responsive" title="" />
 								</a>
 							</li>
 							<!-- <li>
@@ -275,30 +277,34 @@ p {
 								<img class="etalage_source_image" src="images_product/rice2.jpg" class="img-responsive" title="" />
 							</li> -->
 							<li>
-								<img class="etalage_thumb_image" src="../images/opinel/opinel.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="../images/opinel/opinel.jpg"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="../product_us/women1.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="../product_us/women1.jpg"class="img-responsive"  />
 							</li>
 						    <li>
-								<img class="etalage_thumb_image" src="../images/opinel/opinel9.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="../images/opinel/opinel9.jpg"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="../product_us/women2.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="../product_us/women2.jpg"class="img-responsive"  />
+							</li>
+							 <li>
+								<img class="etalage_thumb_image" src="../product_us/women3.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="../product_us/women3.jpg"class="img-responsive"  />
 							</li>
 						</ul>
 						 <div class="clearfix"></div>		
 				  </div> 
 				  <div class="desc1 span_3_of_2">
-					<h1>Opinel 法国经典折刀</h1>
-					<p style="font-size: 16px">法国著名刀具品牌。号称法国国刀，法国人得第十一跟手指。法国人家传户晓的品牌。
-					奧皮尼刀(Opinel Knives)即以適合自然環境使用作為設計的藍本。堅固的設計以及貼手的木柄長久以來可說是已成為祖先遺留下來最鮮活的部份。 
-					並被倫敦維多利亞和艾伯特博物館譽為世上100件最美麗的物品之一 ，且曾在紐約現代博物館展覽。 1565年，為了避免仿冒做刀的人都會在刀身上打上印記以示一種保證。</p>
+					<h1>One A Day 美国拜耳每天一粒50+女性复合维生素</h1>
+					<p style="font-size: 16px">  特别设计给中老年女性每天所需的综合维他命，以最新的科学方法制造出的维他命A的配方，
+					帮助您加强骨骼强度，并加入镁，钙和维他命D帮助骨骼发展所需的营养。提高营养素铁的含量，帮助你的身体机能转换重要的碘物质为身体所吸收，
+					提供每日所需的叶酸－女性最需要的营养素，100%满足女性的需求。</p>
 				     <div class="dropdown_top">
 				       <div class="dropdown_left">
 					     <select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro1"}'>
-	            			<option value="0">可选型号</option>	
-							<option value="1">碳钢</option>
-							<option value="2">不锈钢</option>
-							<option value="3">尺寸No.6--No.12</option>
-							<option value="4"></option>
-							<option value="5"></option>
+	            			<option value="0">产品线</option>	
+							<option value="1">120粒/瓶</option>
+							<option value="2">200粒/瓶</option>
+							<option value="3">300粒/瓶</option>
+							<!--<option value="4">婴儿速溶冲剂</option>
+							<option value="5">婴儿咀嚼片</option> -->
 							<option value="5"></option>
 							<option value="5"></option>
 			             </select>
@@ -316,11 +322,11 @@ p {
 			         	<div class="price_single">
                           
                           <p style="font-size: 16px"> 美国参考售价 </p>
-						  <div class="head"><h2><span class="amount item_price">$13--$22</span></h2></div>
+						  <div class="head"><h2><span class="amount item_price">$22.99(200粒/瓶)</span></h2></div>
                           <form>
         <input id="input-22"  value="0" type="number" class="rating" min=0 max=5 step=0.5 data-rtl=1 data-container-class='text-right' data-glyphicon=0 data-size="xs">
 </form>
-						  </br><p> ＊注: 此价格为美国售价，寻找代购时应考虑美国购物税（0%－10%不等），以及国际快递成本</p>
+						  </br><p> ＊注: 此价格为为美国售价，寻找代购时应考虑美国购物税（0%－10%不等），以及国际快递成本</p>
 						  <div class="head_desc"><a href="#">12 reviews</a><img src="images_product/review.png" alt=""/></li></div>
                           
 					       <div class="clearfix"></div>
@@ -336,29 +342,42 @@ p {
 			 <ul class="menu_drop">
 				<li class="item1"><a href="#"><img src="images_product/product_arrow.png">产品描述</a>
 					<ul>
-						<li class="subitem1"> 法国制造。精湛工艺。使用高质量材质打造</br>
-											  1.刀身採含碳量0.9%的高碳不鏽鋼製成，含鉻量至少13%。 </li>
-						<li class="subitem2">  2.熱處理嚴格溫度控制品管。</li>
-						<li class="subitem3"> 3.研磨及處理：特殊的戒形鎖設計在開啟及收合方面皆可完好鎖定；大部份的刀柄採用櫸木製成， 有些則採其它木頭並且在握柄木材外殼塗以聚安脂塗料予以保護；至今為止全球已銷售超過20億把。</li>
+						<li class="subitem1"> 
+						* 银杏叶精华来辅助记忆 </br>
+						* 维生素D、钙、镁促进骨骼的健康 </br>
+						* 维生素D有益于乳房的健康 </br>
+						* 维生素C-促进胶原的合成，维护关节的健康</br>
+						* 维生素B6,B12,C,E和叶酸帮助提升心脏的健康</br>
+						* 维生素E, A, C和锌保护眼睛的健康 </li>
+						<li class="subitem2">  研究表明，我们身体内细胞的健康在我们的一生中扮演了重要的作用。这也就是为什么
+						每天一粒50+女性复合维生素选用7种不同的抗氧化剂来促进细胞的健康。它也是我们专门设计来提升妇女多方面的健康问题，
+						如骨骼，眼睛，及关节的健康。</li>
+						 <!-- <li class="subitem3"> Qunol是Quten Research Institute公司旗下的专利产品品牌，专门针对天然辅酶Q10的研究开发，
+					其它很多品牌的辅酶Q10产品大都是人工合成的，而Qunol系列保健产品源自100%的天然辅酶Q10，保证最佳的吸收和最高的生物利用度。
+					Qunol系列产品是美国辅酶Q10产品中的金牌标准，是众多医生、药剂师、营养师和保健师推荐的保健产品。</li> -->
+						<li class="subitem4"> 产品规格：</br>每瓶200粒，每日一粒，可以使用6个月</br> </li>
+					
 					</ul>
 				</li>
-				<li class="item2"><a href="#"><img src="images_product/product_arrow.png">公司介绍</a>
+				<li class="item2"><a href="#"><img src="images_product/product_arrow.png">品牌介绍</a>
 					<ul>
 						
-					    <li class="subitem2"> 由Joseph Opinel（创始人）设计，由Marcel Opinel于1955年发明（Virobloc），2000年作了改进，使得所有的OPINEL折刀无论使用或者携带都更加安全。 </li>
-						<li class="subitem3"> ·1817年，Opinel家族开始了刀具的制作，位于法国巴黎南部的萨瓦地区的一个小村庄。</br>
-						·1890年，历经两代人，延续至今100多年的OPINEL刀型诞生。</br>
-						·1897年，设定刀具的分类：1～12号刀；在1932年，1号和11号刀停产，但其他刀号延续至今——分类也经典</br>
-						·1909年，注册商标“Crowned Hand”（手指皇冠）</br>
-						·1911年，都灵登山国际博览会上，获得金牌奖的开合式小刀成为了镁光灯的焦点</br>
-						·1955年，独特的安全指环锁定系统“Virobloc”取得了发明专利。</br>
-						·1985年，被授予“全球100个最佳设计之一”，在“伦敦维多利亚和艾伯特博物馆”展示于保时捷911和劳力士手表的旁边。</br>
-						·1989年，OPINEL作为一个常用名词（注册商标）被列入《法国拉鲁斯词典》。</li>
-						<li class="subitem4"> ·2006年，获得“有史以来最成功的999个设计之一”的荣耀，由国际设计师协会组成的陪审团列入《Phaidon Design Classics》（设计经典）。</br>
-						·2009年，OPINEL主编《OPINEL美食厨房》荣获“2010世界最佳美食图书”大奖。</br>
-						·2010年，OPINEL赞助上海世界博览会法国罗纳-阿尔卑斯大区馆博古斯学院法国西餐厅厨房刀具。</br>
-						……传奇仍在继续 </li>
-						<!-- <li class="subitem5"> <a href="#">The Earth's Best Difference: </br>
+					    <li class="subitem2">  One A Day维生素是拜耳公司属下的系列产品,总部位于美国匹兹堡，是拜耳公司下属单位。拜耳是国际性保健、营养、创新材料公司，
+					    总部位于德国勒弗库森。 2005年起，拜耳在北美已拥有16000雇员。拜耳有三大部门――拜耳保健、拜耳农化和拜尔材料科学。公司产品涉及医疗诊断、克服疾病、
+					    保护作物以及提高汽车安全耐用性多个方面。拜耳公司是DAX指数成员，并在纽约上市（BAY）。</br>
+					    拜耳公司最近在白宫举行的仪式上，获得了罗恩-布朗（Ron Brown）公司领导大奖，以表彰公司推进科技创新项目――“让科学有意义”。
+					    这是一个公司范围的职工参与培训项目，是一个志愿和公共项目。美国商业部长卡罗斯-古铁雷斯出席了颁奖仪式。
+					    其最有名的产品就是我们大家头痛、发烧的时候都用的“阿司匹林”.1904年，公司推出了拜耳十字标记———以Y为中心的横竖两行BAYER（拜耳）字样。
+					    这是公司业务的总体象征，在美国，它是最有价值的商标之一。 </li>
+						<!-- <li class="subitem3"> 獨有100%鼠李糖乳桿菌 （Lactobacillus GG） ，擁有超過 800項科研及160項臨床研究，
+						並於美國銷量 No.1，兒童益生菌為美國兒科醫生推薦第一品牌。康萃樂為不同年齡層的朋友改善腸胃健康，有助提高免疫能力。</li>
+						 <li class="subitem4"><a href="#"> Why Organic? </br>
+						Choosing organic is choosing to live a healthier life. Organic foods are produced without the use of potentially harmful chemicals 
+						and synthetic pesticides or growth hormones. This is even more important when we consider infants. For four to six months following birth, 
+						infants receive most of their nutrition from breast milk or infant formula. It is so important that these formulas contain the safest ingredients.
+						If ingested, potential toxic chemicals or heavy metals can lead to compromised immune system development. Likewise, young infants consume disproportionately high levels of fruits and vegetables when compared to adults. This increases their risk of exposure to potential contaminants found among non-organic products. Finally, Earth's Best products do not contain genetically engineered ingredients (GEIs), made by inserting genes from one plant into a strain of another to produce more crops or control pests.
+						Why organic? It is better for you, your child and the environment they will grow up in. </a></li>
+						<li class="subitem5"> <a href="#">The Earth's Best Difference: </br>
 						Organic ingredients grown without harmful pesticides</br>
 						No Genetically Engineered Ingredients (GEIs)</br>
 						Most items made only from whole grains</br>
@@ -368,24 +387,43 @@ p {
 						Rigorous product testing</br> </a></li> -->
 					</ul>
 				</li>
-				<li class="item3"><a href="#"><img src="images_product/product_arrow.png"> 美国亚马逊最有用 (423)</a>
+				<li class="item3"><a href="#"><img src="images_product/product_arrow.png">美国亚马逊评论 (139)</a>
 					<ul>
-						<li style="display: inline-block;"> <img  src="../product_us/knife.png"  /> </li>
-						<li>   <h3 class="m_2" id="buy">423条评论中 最有用评论总结</h3> </li>
-						<li class="subitem1" > 优点： </br>
-						
-						1 刀片是高碳钢。它可以打磨的非常锋利，并且如果你有适当的磨刀工具它能维持很长时间。它同时还兼顾了硬度和韧性（对于工具刀来说是件好事）。</br>
-						2 刀柄在我手中感觉很棒。对于一把雕刀来说足够舒适了。</br>
-						3 刀的闭合锁紧装置非常安全。我不了解任何的数据，但是这种锁紧装置的设计看上去大大降低了任何锁紧失效的可能性。这是你必须考虑的，如果你想用一把折刀来做一些重活的话。锁紧装置同时也保证了刀在你的口袋里不会意外的打开，如果你像我一样喜欢把刀磨的非常锋利的话，这也是很重要的。</br>
-						4 它看上去很棒。这把刀并不是那种俗气的感觉，而是一种很安静，很古典的美丽。</br></li>
-						
-						<li class="subitem1" > </br> 缺点： </br>
-						
-						1 刀的闭合一开始非常紧。刀刃很难被打开，除非你已经使用它开合了上百次。锁紧装置一开始也很难转动。如果不在大拇指上套个什么，那么基本上你很难打开新的刀。</br>
-						2 尽管高碳钢是一种很好的钢材，但它会锈，就是说需要额外的护理。护理对于我来说就是每次使用完之后要把它彻底的擦干，然后没事就往上涂点油。我推荐矿物质油或事山茶花油。有可能它偶尔还会需要你给它抛抛光。</br>
-						3 我最大的失望就是刀刃的加工质量。在刃上有很细微的变形，基本上注意不到，除非你把它放到一块平坦的磨石上打磨你的工具。我不知道这只是我拿到这把刀的产品线上的问题，还是这是Opinel所有产品都存在。
-						</br></li>
-
+						<li>   <h3 class="m_2" id="buy">139条评论中 最有用好评</h3> </li>
+						<li class="subitem1" ><p style="font-size: 16px">   如果你需要补充维生素，那么这个很不错。 5星</br>
+						（19 人中 17人觉得次评论有用） </p>
+						I've been taking multivitamins for years and had yet to settle on one I really like because they 
+						are always too large and don't seem to do anything. These are a little smaller than a lot of vitamins out there. 
+						They have a great % of the daily recommended vitamins.</br>
+						---- By chata37334 on March 9, 2013</br>
+						 </li>
+						 
+						 
+						<!-- <li class="subitem1" ><p style="font-size: 16px"> </br></br> 人生良药  5星</br>
+						（78 人中 81人觉得次评论有用） </p>
+						我觉得这个东西对我的健康简直是神器。我患有肠易激综合征，消化系统很差，而且经常疲劳。在我的医师建议下，
+						我开始每天吃两片这个产品，同时伴随着辅酶Q10一起吃，这几年来我的感觉好了很多。也没有了反胃的问题。
+						我自己作为一名护士，我真是强力推荐这款益生菌。</br>
+						----By Gina Waters on December 2, 2013
+						 </li> -->
+						 
+						 <li>   <h3 class="m_2" id="buy">252条评论中 最有用差评</h3> </li>
+						 <li class="subitem1" ><p style="font-size: 16px">   这是个非常好的配方，出了过量的维生素A。 1星</br>
+						（11 人中 10人觉得次评论有用）</p>
+						This is a great formula, except for the excess vitamin A 
+						(should be no more than 2500iu as more can increase bone loss in women) and it has wayyyyyy too much copper...
+						which many studies have linked to Alzheimers. You're better off getting Centrum Silver, at least they have low amounts of metals that 
+						can prove dangerous to the brain in excess</br>
+						---- By Nick on January 4, 2015
+						 </li>
+						 
+						 <!-- <li class="subitem1" ><p style="font-size: 16px"> </br></br> 也许只是对于我，但是...  2星</br>
+						（5 人中 7人觉得次评论有用）</p>
+						我身体对这个益生菌的反应很差。我持续吃了好几年其它品牌的益生菌（HomeCure FloraRite, Farden of Life Primal Defense, 等等）
+						都没有出现过这种反应。我的肠道变得非常易受刺激，或者说有点压抑。我坚持吃这个大概有1个星期，希望肠道可以适应它，但并没有好转，
+						还在我停止吃以后持续了几天。我没有看到其它评论里看到他们有类似反应，也许这只是我个人的情况？</br>
+						----By G. Butleron January 26, 2014
+						 </li> -->
 
 						<!-- <li class="subitem2"> My baby loves this rice cereal and we were going through alot of boxes. This multi pack is a great price per box. 
 						This rice cereal was recommended by her GI doctor as a good first food.</li>
@@ -394,20 +432,29 @@ p {
 						It is very nice to buy in bulk as we go through a box in about a week, to week in a half. Very nice product and it's organic.</li> -->
 					</ul>
 				</li>
-				<li class="item4"><a href="#"><img src="images_product/product_arrow.png">趣闻佚事</a>
+				<li class="item4"><a href="#"><img src="images_product/product_arrow.png">有用信息</a>
 					<ul>
-					    <li class="subitem2"> *画家毕加索的衣袋里时常揣着一把OPINEL小刀，用来刻木雕及鹅卵石，送给他的情人们。</li>
-						<li class="subitem3"> </br>*著名旅行家蔡澜在他的《海隅散记》中专门撰有“小刀”一文，介绍了他通过OPINEL小刀和法国老头儿JEAN-PIERRE的一段感人故事。
-						老头儿独到地把OPINEL小刀称为自己的第十一根手指，最后将自己身体的这一部分送给了蔡澜。</li>
-						<li class="subitem3"> </br>*对于海盗们，登船前不忘互相提醒“别忘了你的OPINEL和JJ”，之后呼啸着开始杀戮和抢劫之旅。 用OPINEL切割绳索、雕刻烟斗，也作为餐刀切烟肉和面包，餐后用面包皮擦拭心爱的OPINEL。</li>
-						<li class="subitem2"> </br>*美国作家PeterMAYLE在《永远的普罗旺斯》一书中也谈及OPINEL小刀，农夫们用它来挖蘑菇、检验最佳美食----松露。</li>
+					    <li class="subitem2"> 用法用量</br> 
+					    口服，每日1粒，随餐服用。</br>　						
+					    </li>
+					
+						 
+						 <li class="subitem3"> 贮存方法：</br> 
+						 常温、避光、防潮、置于儿童接触不到的地方 
+						</li>
 						
+						
+						<!-- <li class="subitem3">○　适宜人群：</br>
+						1、心脑血管疾患者；</br>
+						2、肿瘤患者；</br>
+						3、糖尿病患者 ；</br>
+						4、老年痴呆症和中枢神经功能失调者；</li>  -->
 					</ul>
 				</li>
-				
 	 		</ul>
    </div>
-   <h3 class="m_2" id="buy">提供此商品代购商</h3>
+   <h3 class="m_2" id="buy">有有有认证买手</h3>
+   <h5 style="text-align:center">经过认证的买手保证提供真品，并且有完善的售后服务，有有有官方也会对其产品质量负责，您可放心购买 <h5>
 	     <div class="container">
           		<div class="box_3">
           			<div class="col-md-3">
@@ -415,16 +462,18 @@ p {
 			   	          <img src="../images/products/richard4.jpg" class="img-responsive" alt="">
 				   	   </a>
 				   </div>
-				    <h4><a href="http://youyouyou.co/member.php?user=richard">richard</a></h4>
-				    <p>¥ 130 起</p>
+				    <h4><a href="http://youyouyou.co/member.php?user=richard">Richard </a></h4>
+				    <h5> 居住在美国旧金山市的留学生，长期进行代购服务</h5>
+				    <p>¥310 美国直邮</p>
 			        </div>
           			<div class="col-md-3">
           				<div class="content_box"><a href="#">
-			   	          <img src="images_product/empty1.jpg" class="img-responsive" alt="">
+			   	          <img src="../images/products/heng_wechat.JPG" class="img-responsive" alt="">
 				   	   </a>
 				   </div>
-				    <h4><a href="#">我们将认证每一个买手</a></h4>
-				    <p></p>
+				    <h4><a href="http://youyouyou.co/member.php?user=heng">Heng</a></h4>
+				    
+				    <p>¥349 </p>
 			        </div>
           			<div class="col-md-3">
           				<div class="content_box"><a href="#">

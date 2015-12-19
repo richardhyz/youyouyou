@@ -8,7 +8,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-	<title>软木板</title>
+	<title>迷你市集</title>
     <meta name="keywords" content="" />
 	<meta name="description" content="" />
 <!-- 
@@ -190,7 +190,7 @@ $(document).ready(function() {
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<a href="#" class="templatemo_logo">
-						<h1>软木板</h1>
+						<h1>迷你市集</h1>
 					</a> <!-- /.logo -->
 				</div> <!-- /.col-md-12 -->
 			</div> <!-- /.row -->
@@ -198,7 +198,7 @@ $(document).ready(function() {
 	</div> <!-- /.site-header -->
  
 	<p style="text-align:center; font-size:18px; color: #33CCCC"> 
-    		在软木板上钉上你认为值得分享的物品，再看看大家都在谈论什么 </p>
+    		在在这里钉上你认为值得分享的物品，再看看大家都在谈论什么 </p>
 
 
 

@@ -38,6 +38,7 @@ http://www.templatemo.com/preview/templatemo_397_concept
     
     
     
+    
     <script src="jquery.min.js"></script>
 <!--[if lt IE 9]>
 <script src="../html5.js"></script>
@@ -221,11 +222,12 @@ p {
 }
 </style>
 
+
 </head>
 
 <body>
 	
-<div id="itemid" style="display:none">opinel</div>
+<div id="itemid" style="display:none">mega</div>
 
 	<?php
 	
@@ -266,8 +268,8 @@ p {
 						<ul id="etalage">
 							<li>
 								<a href="optionallink.html">
-									<img class="etalage_thumb_image" src="../images/opinel/opinel4.jpg" class="img-responsive" />
-									<img class="etalage_source_image" src="../images/opinel/opinel4.jpg" class="img-responsive" title="" />
+									<img class="etalage_thumb_image" src="../product_us/mega.jpg" class="img-responsive" />
+									<img class="etalage_source_image" src="../product_us/mega.jpg" class="img-responsive" title="" />
 								</a>
 							</li>
 							<!-- <li>
@@ -275,30 +277,34 @@ p {
 								<img class="etalage_source_image" src="images_product/rice2.jpg" class="img-responsive" title="" />
 							</li> -->
 							<li>
-								<img class="etalage_thumb_image" src="../images/opinel/opinel.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="../images/opinel/opinel.jpg"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="../product_us/mega1.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="../product_us/mega1.jpg"class="img-responsive"  />
 							</li>
 						    <li>
-								<img class="etalage_thumb_image" src="../images/opinel/opinel9.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="../images/opinel/opinel9.jpg"class="img-responsive"  />
+								<img class="etalage_thumb_image" src="../product_us/mega2.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="../product_us/mega2.jpg"class="img-responsive"  />
+							</li>
+							 <li>
+								<img class="etalage_thumb_image" src="../product_us/mega3.jpg" class="img-responsive"  />
+								<img class="etalage_source_image" src="../product_us/mega3.jpg"class="img-responsive"  />
 							</li>
 						</ul>
 						 <div class="clearfix"></div>		
 				  </div> 
 				  <div class="desc1 span_3_of_2">
-					<h1>Opinel 法国经典折刀</h1>
-					<p style="font-size: 16px">法国著名刀具品牌。号称法国国刀，法国人得第十一跟手指。法国人家传户晓的品牌。
-					奧皮尼刀(Opinel Knives)即以適合自然環境使用作為設計的藍本。堅固的設計以及貼手的木柄長久以來可說是已成為祖先遺留下來最鮮活的部份。 
-					並被倫敦維多利亞和艾伯特博物館譽為世上100件最美麗的物品之一 ，且曾在紐約現代博物館展覽。 1565年，為了避免仿冒做刀的人都會在刀身上打上印記以示一種保證。</p>
+					<h1>Qunol顶级辅酶Q10 CoQ10 </h1>
+					<p style="font-size: 16px">  Qunol是Quten Research Institute公司旗下的专利产品品牌，专门针对天然辅酶Q10的研究开发，
+					其它很多品牌的辅酶Q10产品大都是人工合成的，而Qunol系列保健产品源自100%的天然辅酶Q10，保证最佳的吸收和最高的生物利用度。
+					Qunol系列产品是美国辅酶Q10产品中的金牌标准，是众多医生、药剂师、营养师和保健师推荐的保健产品</p>
 				     <div class="dropdown_top">
 				       <div class="dropdown_left">
 					     <select class="dropdown" tabindex="10" data-settings='{"wrapperClass":"metro1"}'>
-	            			<option value="0">可选型号</option>	
-							<option value="1">碳钢</option>
-							<option value="2">不锈钢</option>
-							<option value="3">尺寸No.6--No.12</option>
-							<option value="4"></option>
-							<option value="5"></option>
+	            			<option value="0">产品线</option>	
+							<option value="1">120粒/瓶</option>
+							<!-- <option value="2">成人咀嚼片</option>
+							<option value="3">成人增强免疫系统配方</option>
+							<option value="4">婴儿速溶冲剂</option>
+							<option value="5">婴儿咀嚼片</option> -->
 							<option value="5"></option>
 							<option value="5"></option>
 			             </select>
@@ -316,11 +322,11 @@ p {
 			         	<div class="price_single">
                           
                           <p style="font-size: 16px"> 美国参考售价 </p>
-						  <div class="head"><h2><span class="amount item_price">$13--$22</span></h2></div>
+						  <div class="head"><h2><span class="amount item_price">$35.99</span></h2></div>
                           <form>
         <input id="input-22"  value="0" type="number" class="rating" min=0 max=5 step=0.5 data-rtl=1 data-container-class='text-right' data-glyphicon=0 data-size="xs">
 </form>
-						  </br><p> ＊注: 此价格为美国售价，寻找代购时应考虑美国购物税（0%－10%不等），以及国际快递成本</p>
+						  </br><p> ＊注: 此价格为为美国售价，寻找代购时应考虑美国购物税（0%－10%不等），以及国际快递成本</p>
 						  <div class="head_desc"><a href="#">12 reviews</a><img src="images_product/review.png" alt=""/></li></div>
                           
 					       <div class="clearfix"></div>
@@ -336,29 +342,34 @@ p {
 			 <ul class="menu_drop">
 				<li class="item1"><a href="#"><img src="images_product/product_arrow.png">产品描述</a>
 					<ul>
-						<li class="subitem1"> 法国制造。精湛工艺。使用高质量材质打造</br>
-											  1.刀身採含碳量0.9%的高碳不鏽鋼製成，含鉻量至少13%。 </li>
-						<li class="subitem2">  2.熱處理嚴格溫度控制品管。</li>
-						<li class="subitem3"> 3.研磨及處理：特殊的戒形鎖設計在開啟及收合方面皆可完好鎖定；大部份的刀柄採用櫸木製成， 有些則採其它木頭並且在握柄木材外殼塗以聚安脂塗料予以保護；至今為止全球已銷售超過20億把。</li>
+						<li class="subitem1"> 辅酶 Q10是近年来在美国及先进国家地区十分流行的一种新型保健品，它的主要功效就是保护心脏，延年益寿。 </li>
+						<li class="subitem2">  经大量临床试验证明CoQ10（辅酶Q10）是一种能提高身体抗细胞抗氧化能力的强大抗氧化剂。人体随着年龄的增长，身体中的Q10会逐渐消失殆尽，身体的抗氧化能力随之减弱，
+						因此，人们对心脏及血管抗老化保护就更是必不可少，服用Co-Q10能起到补充身体中所含Q10数量，从而达到保护心血管健康的效果。CoQ10除了是一种高功能抗氧化剂外，还可为身体的营养吸收起到调和的作用,
+						从而使身体随时保持在健康的状态。CoQ10对于长期服用降胆固醇药物的人群也可提供很好的帮助，
+						因为大多数降胆固醇药物都会降低身体中的Q10成分，从而带来抵抗力下降和营养吸收不良的副作用，
+						服用CoQ10可达到补充流失Q10的效果。</li>
+						 <!-- <li class="subitem3"> Qunol是Quten Research Institute公司旗下的专利产品品牌，专门针对天然辅酶Q10的研究开发，
+					其它很多品牌的辅酶Q10产品大都是人工合成的，而Qunol系列保健产品源自100%的天然辅酶Q10，保证最佳的吸收和最高的生物利用度。
+					Qunol系列产品是美国辅酶Q10产品中的金牌标准，是众多医生、药剂师、营养师和保健师推荐的保健产品。</li> -->
+						<li class="subitem4"> 产品规格：</br>每盒120粒胶囊，每日一粒，可以使用4个月</br> </li>
+					
 					</ul>
 				</li>
-				<li class="item2"><a href="#"><img src="images_product/product_arrow.png">公司介绍</a>
+				<li class="item2"><a href="#"><img src="images_product/product_arrow.png">品牌介绍</a>
 					<ul>
 						
-					    <li class="subitem2"> 由Joseph Opinel（创始人）设计，由Marcel Opinel于1955年发明（Virobloc），2000年作了改进，使得所有的OPINEL折刀无论使用或者携带都更加安全。 </li>
-						<li class="subitem3"> ·1817年，Opinel家族开始了刀具的制作，位于法国巴黎南部的萨瓦地区的一个小村庄。</br>
-						·1890年，历经两代人，延续至今100多年的OPINEL刀型诞生。</br>
-						·1897年，设定刀具的分类：1～12号刀；在1932年，1号和11号刀停产，但其他刀号延续至今——分类也经典</br>
-						·1909年，注册商标“Crowned Hand”（手指皇冠）</br>
-						·1911年，都灵登山国际博览会上，获得金牌奖的开合式小刀成为了镁光灯的焦点</br>
-						·1955年，独特的安全指环锁定系统“Virobloc”取得了发明专利。</br>
-						·1985年，被授予“全球100个最佳设计之一”，在“伦敦维多利亚和艾伯特博物馆”展示于保时捷911和劳力士手表的旁边。</br>
-						·1989年，OPINEL作为一个常用名词（注册商标）被列入《法国拉鲁斯词典》。</li>
-						<li class="subitem4"> ·2006年，获得“有史以来最成功的999个设计之一”的荣耀，由国际设计师协会组成的陪审团列入《Phaidon Design Classics》（设计经典）。</br>
-						·2009年，OPINEL主编《OPINEL美食厨房》荣获“2010世界最佳美食图书”大奖。</br>
-						·2010年，OPINEL赞助上海世界博览会法国罗纳-阿尔卑斯大区馆博古斯学院法国西餐厅厨房刀具。</br>
-						……传奇仍在继续 </li>
-						<!-- <li class="subitem5"> <a href="#">The Earth's Best Difference: </br>
+					    <li class="subitem2">  Qunol是Quten Research Institute公司旗下的专利产品品牌，专门针对天然辅酶Q10的研究开发，
+					其它很多品牌的辅酶Q10产品大都是人工合成的，而Qunol系列保健产品源自100%的天然辅酶Q10，保证最佳的吸收和最高的生物利用度。
+					Qunol系列产品是美国辅酶Q10产品中的金牌标准，是众多医生、药剂师、营养师和保健师推荐的保健产品。 </li>
+						<!-- <li class="subitem3"> 獨有100%鼠李糖乳桿菌 （Lactobacillus GG） ，擁有超過 800項科研及160項臨床研究，
+						並於美國銷量 No.1，兒童益生菌為美國兒科醫生推薦第一品牌。康萃樂為不同年齡層的朋友改善腸胃健康，有助提高免疫能力。</li>
+						 <li class="subitem4"><a href="#"> Why Organic? </br>
+						Choosing organic is choosing to live a healthier life. Organic foods are produced without the use of potentially harmful chemicals 
+						and synthetic pesticides or growth hormones. This is even more important when we consider infants. For four to six months following birth, 
+						infants receive most of their nutrition from breast milk or infant formula. It is so important that these formulas contain the safest ingredients.
+						If ingested, potential toxic chemicals or heavy metals can lead to compromised immune system development. Likewise, young infants consume disproportionately high levels of fruits and vegetables when compared to adults. This increases their risk of exposure to potential contaminants found among non-organic products. Finally, Earth's Best products do not contain genetically engineered ingredients (GEIs), made by inserting genes from one plant into a strain of another to produce more crops or control pests.
+						Why organic? It is better for you, your child and the environment they will grow up in. </a></li>
+						<li class="subitem5"> <a href="#">The Earth's Best Difference: </br>
 						Organic ingredients grown without harmful pesticides</br>
 						No Genetically Engineered Ingredients (GEIs)</br>
 						Most items made only from whole grains</br>
@@ -368,24 +379,49 @@ p {
 						Rigorous product testing</br> </a></li> -->
 					</ul>
 				</li>
-				<li class="item3"><a href="#"><img src="images_product/product_arrow.png"> 美国亚马逊最有用 (423)</a>
+				<li class="item3"><a href="#"><img src="images_product/product_arrow.png">美国亚马逊评论 (252)</a>
 					<ul>
-						<li style="display: inline-block;"> <img  src="../product_us/knife.png"  /> </li>
-						<li>   <h3 class="m_2" id="buy">423条评论中 最有用评论总结</h3> </li>
-						<li class="subitem1" > 优点： </br>
-						
-						1 刀片是高碳钢。它可以打磨的非常锋利，并且如果你有适当的磨刀工具它能维持很长时间。它同时还兼顾了硬度和韧性（对于工具刀来说是件好事）。</br>
-						2 刀柄在我手中感觉很棒。对于一把雕刀来说足够舒适了。</br>
-						3 刀的闭合锁紧装置非常安全。我不了解任何的数据，但是这种锁紧装置的设计看上去大大降低了任何锁紧失效的可能性。这是你必须考虑的，如果你想用一把折刀来做一些重活的话。锁紧装置同时也保证了刀在你的口袋里不会意外的打开，如果你像我一样喜欢把刀磨的非常锋利的话，这也是很重要的。</br>
-						4 它看上去很棒。这把刀并不是那种俗气的感觉，而是一种很安静，很古典的美丽。</br></li>
-						
-						<li class="subitem1" > </br> 缺点： </br>
-						
-						1 刀的闭合一开始非常紧。刀刃很难被打开，除非你已经使用它开合了上百次。锁紧装置一开始也很难转动。如果不在大拇指上套个什么，那么基本上你很难打开新的刀。</br>
-						2 尽管高碳钢是一种很好的钢材，但它会锈，就是说需要额外的护理。护理对于我来说就是每次使用完之后要把它彻底的擦干，然后没事就往上涂点油。我推荐矿物质油或事山茶花油。有可能它偶尔还会需要你给它抛抛光。</br>
-						3 我最大的失望就是刀刃的加工质量。在刃上有很细微的变形，基本上注意不到，除非你把它放到一块平坦的磨石上打磨你的工具。我不知道这只是我拿到这把刀的产品线上的问题，还是这是Opinel所有产品都存在。
-						</br></li>
-
+						<li>   <img src="../product_us/mega9.png"  /> </li>
+						<li>   <h3 class="m_2" id="buy">252条评论中 最有用好评</h3> </li>
+						<li class="subitem1" ><p style="font-size: 16px">   好东西..听我说说！ 5星</br>
+						（76 人中 72人觉得次评论有用） </p>
+						I have Muscular Dystrophy and am on a lot of pain meds just to stay functional for my 4 year old boy. 
+						My neurologist told me to start taking large doses of Ubiquinol CoQ10 to help my muscle cells' mitochondria process what it needs to to stay alive. 
+						He said at least 300mg/day (I take 400-600/day). I chose this kind because it was the best value for Ubiquinol that I've ever found... and trust me... 
+						I've looked. This is a lifetime supplement for me. Found it first at Costco, but Amazon has it for a little less :). Yea :) It doesn't just help a little. 
+						Within a week, I noticed that I didn't need to take as much medication. And I don't have as many bad days when I HAVE to use my wheelchair (or I don't move).
+						I know it's this because I've gotten lazy a couple of times and forgot to take it. After a few days, my body just stopped - like the tin man in a rain storm. Desperate, I'd look at my litany of meds and supplements, would see this, remember how much a difference it made, and start taking it again. It's like magic ... or really good science ;). If this stuff can help me like this, it can ONLY make your body work more efficiently. It's really good, really effective, and really cheap for what it is. Thank you Qunol for making such a good product at such a great price. You will help a lot of people. :)</br>
+						----By Kindle Customer on April 3, 2013 </br>
+						 </li>
+						 
+						 
+						<!-- <li class="subitem1" ><p style="font-size: 16px"> </br></br> 人生良药  5星</br>
+						（78 人中 81人觉得次评论有用） </p>
+						我觉得这个东西对我的健康简直是神器。我患有肠易激综合征，消化系统很差，而且经常疲劳。在我的医师建议下，
+						我开始每天吃两片这个产品，同时伴随着辅酶Q10一起吃，这几年来我的感觉好了很多。也没有了反胃的问题。
+						我自己作为一名护士，我真是强力推荐这款益生菌。</br>
+						----By Gina Waters on December 2, 2013
+						 </li> -->
+						 
+						 <li>   <h3 class="m_2" id="buy">252条评论中 最有用差评</h3> </li>
+						 <li class="subitem1" ><p style="font-size: 16px">   含有聚山梨酯80 2星</br>
+						（89 人中 78人觉得次评论有用）</p>
+						I was excited from reading all the reviews of this product and not seeing any bad reviews, so I literally went straight to Costco to get it. 
+						As I was in line, I checked the ingredients and "Polysorbate 80" sent up a red flag (I am generally cautious of any ingredient w/ a numerical value in it).
+						 When I went home, I did research, and discovered the range of side effects of the ingredient, including: allergic reactions, nausea, vomiting, 
+						 diarrhea, abnormal heart rhythm, heart attack, stroke, infertility in women, and tumor growth (Source: [...]
+						Otherwise, the product is still a great buy for the quantity and an ubiquinol CoQ10 supplement in general, but it wasn't for me - 
+						I ended up going w/ Garden of Life's Raw CoQ10 formula.</br>
+						----By D Leeon May 12, 2013
+						 </li>
+						 
+						 <!-- <li class="subitem1" ><p style="font-size: 16px"> </br></br> 也许只是对于我，但是...  2星</br>
+						（5 人中 7人觉得次评论有用）</p>
+						我身体对这个益生菌的反应很差。我持续吃了好几年其它品牌的益生菌（HomeCure FloraRite, Farden of Life Primal Defense, 等等）
+						都没有出现过这种反应。我的肠道变得非常易受刺激，或者说有点压抑。我坚持吃这个大概有1个星期，希望肠道可以适应它，但并没有好转，
+						还在我停止吃以后持续了几天。我没有看到其它评论里看到他们有类似反应，也许这只是我个人的情况？</br>
+						----By G. Butleron January 26, 2014
+						 </li> -->
 
 						<!-- <li class="subitem2"> My baby loves this rice cereal and we were going through alot of boxes. This multi pack is a great price per box. 
 						This rice cereal was recommended by her GI doctor as a good first food.</li>
@@ -394,20 +430,35 @@ p {
 						It is very nice to buy in bulk as we go through a box in about a week, to week in a half. Very nice product and it's organic.</li> -->
 					</ul>
 				</li>
-				<li class="item4"><a href="#"><img src="images_product/product_arrow.png">趣闻佚事</a>
+				<li class="item4"><a href="#"><img src="images_product/product_arrow.png">有用信息</a>
 					<ul>
-					    <li class="subitem2"> *画家毕加索的衣袋里时常揣着一把OPINEL小刀，用来刻木雕及鹅卵石，送给他的情人们。</li>
-						<li class="subitem3"> </br>*著名旅行家蔡澜在他的《海隅散记》中专门撰有“小刀”一文，介绍了他通过OPINEL小刀和法国老头儿JEAN-PIERRE的一段感人故事。
-						老头儿独到地把OPINEL小刀称为自己的第十一根手指，最后将自己身体的这一部分送给了蔡澜。</li>
-						<li class="subitem3"> </br>*对于海盗们，登船前不忘互相提醒“别忘了你的OPINEL和JJ”，之后呼啸着开始杀戮和抢劫之旅。 用OPINEL切割绳索、雕刻烟斗，也作为餐刀切烟肉和面包，餐后用面包皮擦拭心爱的OPINEL。</li>
-						<li class="subitem2"> </br>*美国作家PeterMAYLE在《永远的普罗旺斯》一书中也谈及OPINEL小刀，农夫们用它来挖蘑菇、检验最佳美食----松露。</li>
+					    <li class="subitem2"> 用法用量</br> 
+					    口服，每日1粒，随餐服用。</br>　						
+					    或遵医嘱。</br>
+					
+						 
+						 <li class="subitem3"> 产品功效：</br> 
+						 1、抗氧化性，心血管系统的应用！</br>
+
+						2、抗肿瘤作用及免疫调节作用</br>
+
+						3、抗皮肤皱纹和延缓皮肤衰老 </br>
+
+
+						4、其它用途辅助药物他汀类的辅助药</br></li>
 						
+						</li>
+						<li class="subitem3">○　适宜人群：</br>
+						1、心脑血管疾患者；</br>
+						2、肿瘤患者；</br>
+						3、糖尿病患者 ；</br>
+						4、老年痴呆症和中枢神经功能失调者；</li> 
 					</ul>
 				</li>
-				
 	 		</ul>
    </div>
-   <h3 class="m_2" id="buy">提供此商品代购商</h3>
+   <h3 class="m_2" id="buy">有有有认证买手</h3>
+   <h5 style="text-align:center">经过认证的买手保证提供真品，并且有完善的售后服务，有有有官方也会对其产品质量负责，您可放心购买 <h5>
 	     <div class="container">
           		<div class="box_3">
           			<div class="col-md-3">
@@ -415,16 +466,18 @@ p {
 			   	          <img src="../images/products/richard4.jpg" class="img-responsive" alt="">
 				   	   </a>
 				   </div>
-				    <h4><a href="http://youyouyou.co/member.php?user=richard">richard</a></h4>
-				    <p>¥ 130 起</p>
+				    <h4><a href="http://youyouyou.co/member.php?user=richard">Richard </a></h4>
+				    <h5> 居住在美国旧金山市的留学生，长期进行代购服务</h5>
+				    <p>¥330 美国直邮</p>
 			        </div>
           			<div class="col-md-3">
           				<div class="content_box"><a href="#">
-			   	          <img src="images_product/empty1.jpg" class="img-responsive" alt="">
+			   	          <img src="../images/products/heng_wechat.JPG" class="img-responsive" alt="">
 				   	   </a>
 				   </div>
-				    <h4><a href="#">我们将认证每一个买手</a></h4>
-				    <p></p>
+				    <h4><a href="http://youyouyou.co/member.php?user=heng">Heng</a></h4>
+				    
+				    <p>¥349 </p>
 			        </div>
           			<div class="col-md-3">
           				<div class="content_box"><a href="#">

@@ -48,8 +48,28 @@ http://www.templatemo.com/preview/templatemo_397_concept
 
 	do_html_header();
 	?>
-		
-		
+
+<!-- search bar -->		
+		<script>
+		  (function() {
+			var cx = '007599678928797126739:b9x2lohdlb8';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//cse.google.com/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		  })();
+		</script>
+
+	<div style="width: 500px; height= 30px; float: right;">
+		<gcse:search></gcse:search>
+	</div>
+<!-- search bar -->		
+
+
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -172,10 +192,10 @@ http://www.templatemo.com/preview/templatemo_397_concept
 					<div class="col-md-2 col-sm-6 col-md-offset-3">
 						<div class="gallery-item">
 							<div class="image">
-                            	<a href="http://youyouyou.co/gaming.php"> <img src="images/gallery/gaming9.jpg" alt="image 2"> </a>
+                            	<a href="http://youyouyou.co/watch.php"> <img src="images/gallery/watch.jpg" alt="image 2"> </a>
 							</div>
 							<div class="content-gallery">
-								<h3> 游戏 </h3>
+								<h3> 手表 </h3>
 							</div>
 						</div> <!-- /.gallery-item -->
 					</div> <!-- /.col-md-2 -->

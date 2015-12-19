@@ -29,7 +29,7 @@ function do_html_header() {
 							<!-- <li style="float: left"><a href="http://youyouyou.co" target="_self">首页</a></li> -->
 							<li><a href="http://youyouyou.co/1stpage.php" target="_self">陈列室</a></li>
 							<li><a href="http://youyouyou.co/2ndpagelike.php" target="_self">迷你市集</a></li>
-							<li><a href="#" target="_self">论坛</a></li>
+							<li><a href="http://youyouyou.co/forum/forum.php" target="_self">论坛</a></li>
 							<!--<li><a href="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>-->
 							<!-- <li><a href="http://youyouyou.co/5thpage.php" target="_self">联系</a></li> -->
 						  	

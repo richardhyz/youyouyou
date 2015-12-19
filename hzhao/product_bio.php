@@ -356,10 +356,10 @@ p {
 				<li class="item2"><a href="#"><img src="images_product/product_arrow.png">公司介绍</a>
 					<ul>
 						
-					    <li class="subitem2"> <a href="#"> Culturelle（康萃乐）是美国保健品企业i-Health公司旗下的益生菌膳食补充剂品牌。
-					    Culturelle益生菌是美国益生菌行业领先品牌，该产品已经被证明有助于维持儿童天然免疫系统和缓解偶发性消化不良。 </a></li>
-						<li class="subitem3"><a href="#"> 獨有100%鼠李糖乳桿菌 （Lactobacillus GG） ，擁有超過 800項科研及160項臨床研究，
-						並於美國銷量 No.1，兒童益生菌為美國兒科醫生推薦第一品牌。康萃樂為不同年齡層的朋友改善腸胃健康，有助提高免疫能力。</a></li>
+					    <li class="subitem2">  Culturelle（康萃乐）是美国保健品企业i-Health公司旗下的益生菌膳食补充剂品牌。
+					    Culturelle益生菌是美国益生菌行业领先品牌，该产品已经被证明有助于维持儿童天然免疫系统和缓解偶发性消化不良。 </li>
+						<li class="subitem3"> 獨有100%鼠李糖乳桿菌 （Lactobacillus GG） ，擁有超過 800項科研及160項臨床研究，
+						並於美國銷量 No.1，兒童益生菌為美國兒科醫生推薦第一品牌。康萃樂為不同年齡層的朋友改善腸胃健康，有助提高免疫能力。</li>
 						<!-- <li class="subitem4"><a href="#"> Why Organic? </br>
 						Choosing organic is choosing to live a healthier life. Organic foods are produced without the use of potentially harmful chemicals 
 						and synthetic pesticides or growth hormones. This is even more important when we consider infants. For four to six months following birth, 
@@ -376,13 +376,43 @@ p {
 						Rigorous product testing</br> </a></li> -->
 					</ul>
 				</li>
-				<li class="item3"><a href="#"><img src="images_product/product_arrow.png">评论 (10)</a>
+				<li class="item3"><a href="#"><img src="images_product/product_arrow.png">美国亚马逊评论 (568)</a>
 					<ul>
-						<li class="subitem1" >北京中美合资和睦家医院的儿科专家崔玉涛医生也是极力推崇culturelle LGG益生菌哦。下面摘录一段崔医生的话：</br>
-						过敏检查结果提示IgE大于200，说明孩子确实存在过敏，因为正常值小于100，特异IgE提示孩子对包括牛奶在内的食物和部分吸入物有过敏，这样的话我们要从生活上特别地注意，首先将牛奶应该换成水解蛋白的奶粉，可以选择能恩超级金盾。
-						对于其他可疑的过敏食物我们可以暂停3个月，对于吸入物的过敏，我们应该注意家里的生活方式，比如家里去掉吸尘器，用清水擦洗。这样可以减少孩子吸入灰尘等的机会，就可以减少吸入物对孩子的刺激，这些都是躲避疗法，它的作用只能达到部分效果。
-						医生之所以会推荐胶囊型（成人型）的原因：一是LGG活菌是儿童型的10倍，二是胶囊型的成份相比儿童型更单纯，我也会在下面的介绍里把成份表翻译出来，大家可以参考。
-						那妈妈们会问，倒底给宝宝吃哪种呢？个人建议，如果宝宝肠胃疾病或湿疹情况轻的吃儿童型，严重的吃胶囊型。这两种都是婴儿可以安全服用的。 </li>
+						<li>   <h3 class="m_2" id="buy">569条评论中 最有用好评</h3> </li>
+						<li class="subitem1" ><p style="font-size: 16px">  终于，一款确实有用的益生菌！ 5星</br>
+						（184 人中 178人觉得次评论有用） </p>
+						我今年62岁，在过去的40年里，我一直是个健康生活的追随者。我已经坚持服用益生菌至少15年的时间，很有可能更长。 
+						这几年在我医生的建议下，试了很多品牌，绝大多数我其实并不能感觉到很明显的效果。三个月前，我读到一份消费者调查，
+						说Culturelle 是被证明与强烈推荐的三个益生菌品牌之一。Culturelle被证明是在量产益生菌里可以提供最高功效的。
+						这非常的打动我，决定试一试。最终我真心认为这是我第一次感受到一个明显的区别，以及明显的肠胃改善！
+						真是一个我没有料到的惊喜。我对这个益生菌印象极好，所以我告诉了我的消化道医生。这个产品很管用，至少对我来说是这样。</br>
+						----By Steven J. Westonon    December 20, 2012 </br>
+						 </li>
+						 
+						 
+						 <li class="subitem1" ><p style="font-size: 16px"> </br></br> 人生良药  5星</br>
+						（78 人中 81人觉得次评论有用） </p>
+						我觉得这个东西对我的健康简直是神器。我患有肠易激综合征，消化系统很差，而且经常疲劳。在我的医师建议下，
+						我开始每天吃两片这个产品，同时伴随着辅酶Q10一起吃，这几年来我的感觉好了很多。也没有了反胃的问题。
+						我自己作为一名护士，我真是强力推荐这款益生菌。</br>
+						----By Gina Waters on December 2, 2013
+						 </li>
+						 
+						 <li>   <h3 class="m_2" id="buy">569条评论中 最有用差评</h3> </li>
+						 <li class="subitem1" ><p style="font-size: 16px">  很难说究竟有没有好处 3星</br>
+						（2人中 2人觉得次评论有用）</p>
+						我认为益生菌对你是有好处的，特别是在服用抗生素时以及服用之后，益生菌可以补充那些被抗生素杀死的有益菌。
+						但是，很难说清这个益生菌就比同类型的其它产品好了多少，就比如酸奶或是其它品牌的益生菌。</br>
+						----By Candy DuPont-Perkinson November 25, 2013
+						 </li>
+						 
+						  <li class="subitem1" ><p style="font-size: 16px"> </br></br> 也许只是对于我，但是...  2星</br>
+						（5 人中 7人觉得次评论有用）</p>
+						我身体对这个益生菌的反应很差。我持续吃了好几年其它品牌的益生菌（HomeCure FloraRite, Farden of Life Primal Defense, 等等）
+						都没有出现过这种反应。我的肠道变得非常易受刺激，或者说有点压抑。我坚持吃这个大概有1个星期，希望肠道可以适应它，但并没有好转，
+						还在我停止吃以后持续了几天。我没有看到其它评论里看到他们有类似反应，也许这只是我个人的情况？</br>
+						----By G. Butleron January 26, 2014
+						 </li>
 
 						<!-- <li class="subitem2"> My baby loves this rice cereal and we were going through alot of boxes. This multi pack is a great price per box. 
 						This rice cereal was recommended by her GI doctor as a good first food.</li>
