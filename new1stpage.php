@@ -108,7 +108,7 @@ $(document).ready(function () {
 					<div class="col-md-12 main_menu" >
 						<ul style="display: inline">
 						
-							<li style="float: left !important "><a href="http://youyouyou.co" target="_self"><img src="images/logow.png" ?></a> <a href="http://youyouyou.co" target="_self">&nbsp;</a></li>
+							<li style="float: left !important "><a href="http://youyouyou.co" target="_self"><img src="images/logow.png" ?></a>    <a href="http://youyouyou.co" target="_self">&nbsp;&nbsp;</a></li>
 
 							<li ><a href="http://youyouyou.co/new1stpage.php" target="_self">Gallery</a></li>
 							<li><a href="http://youyouyou.co/2ndpagelike.php" target="_self">Mini Market</a></li>

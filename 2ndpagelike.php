@@ -182,13 +182,48 @@ $(document).ready(function() {
   	 
 	session_start();
 
-	do_html_header();
+	//do_html_header();
 	?>
 
+	<div class="site-header">
+	  <div class="main-navigation">
+	
+			<div class="container">
+				<!--<div class="row">-->
+
+					
+					<div class="col-md-12 main_menu" >
+						<ul style="display: inline">
+						
+							<li style="float: left !important "><a href="http://youyouyou.co" target="_self"><img src="images/logow.png" ?></a>   </li>
+
+							<li ><a href="http://youyouyou.co/new1stpage.php" target="_self">Gallery</a></li>
+							<li><a href="http://youyouyou.co/2ndpagelike.php" target="_self">Mini Market</a></li>
+							<li><a href="http://youyouyou.co/forum/forum.php" target="_self">Forum</a></li>
+							<!--<li><a href="http://youyouyou.co/4thpage.php" target="_self">关于</a></li>-->
+							<!-- <li><a href="http://youyouyou.co/5thpage.php" target="_self">联系</a></li> -->
+						  	
+                            <?php
+							if(isset($_SESSION[ 'valid_user'])) { 
+								  ?>
+						
+								<li style="float:right;  margin-left: 30px; !important"><a href="http://youyouyou.co/3rdpage.php" target="_self"> <?php echo $_SESSION[ 'valid_user'] ?>的小屋 </a> <a href="test/logout.php">Logout</a> </li>
+							<?php } 
+							else { ?>
+								<li style="float:right;  margin-left: 30px;" ><a href="http://youyouyou.co/test/login.php" target="_self">Login / Sign Up</a></li>
+							<?php } ?>
+	
+						</ul>
+					</div> <!-- /.col-md-12 -->
+				<!--</div> /.row -->
+			</div> <!-- /.container -->
+		  </div>
+		
 
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
+				    <br / >
 					<a href="#" class="templatemo_logo">
 						<h1>迷你市集</h1>
 					</a> <!-- /.logo -->
